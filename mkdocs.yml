@@ -1,0 +1,60 @@
+---
+site_name: pman
+site_author: Kyle King
+site_description: pman project documentation
+repo_name: kyleking/pman
+repo_url: https://github.com/kyleking/pman
+edit_uri: edit/main/docs
+docs_dir: docs
+site_dir: releases/site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      accent: green
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - toc.autohide
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+      enable_creation_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite:
+      linenums: true
+  - def_list
+  - extra
+  - fenced_code
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - smarty
+  - tables
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 5
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - _javascript/tables.js
