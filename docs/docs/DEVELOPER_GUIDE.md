@@ -5,7 +5,7 @@
 ```sh
 git clone https://github.com/kyleking/pman.git
 cd pman
-poetry install 
+poetry install
 
 # See the available tasks
 poetry run doit list
@@ -47,5 +47,10 @@ poetry run doit run lock document deploy_docs publish
 ## Current Status
 
 <!-- {cts} COVERAGE -->
+| File               |   Statements |   Missing |   Excluded | Coverage   |
+|--------------------|--------------|-----------|------------|------------|
+| `pman/__init__.py` |            4 |         0 |          0 | 100.0%     |
+| **Totals**         |            4 |         0 |          0 | 100.0%     |
 
+Generated on: 2022-08-05
 <!-- {cte} -->
