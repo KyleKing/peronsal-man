@@ -20,7 +20,7 @@ multi_line_output = 5
 [tool.poetry]
 name = "pman"
 version = "0.0.1"
-description = "Personal Manpages"
+description = "pman: Personal Manpages"
 license = "MIT"
 authors = ["Kyle King <dev.act.kyle@gmail.com>"]
 maintainers = []
@@ -44,6 +44,8 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.8.4"
 calcipy = ">=0.16.0"
+pydantic = ">=1.9.1"
+rich = ">=12.5.1"
 
 [tool.poetry.dev-dependencies]
 calcipy = { version = "*", extras = ["dev", "lint", "test"] }
