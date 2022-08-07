@@ -6,6 +6,7 @@ from loguru import logger
 
 from . import __pkg_name__
 from .controllers.man_controller import ManController
+from .controllers.search_controller import SearchController
 from .core.exceptions import CLIError
 
 # Initialize nested dictionary for storing application defaults
@@ -24,7 +25,7 @@ class CLIApp(App):
         exit_on_close = True
         """Call sys.exit() on close."""
 
-        handlers = [ManController]
+        handlers = [ManController, SearchController]
         """Register handlers."""
 
 

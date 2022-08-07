@@ -1,6 +1,6 @@
 """man."""
 
-# FIXME: What is a better name for basic search?
+# FIXME: What is a better name for file search?
 
 from pathlib import Path
 
