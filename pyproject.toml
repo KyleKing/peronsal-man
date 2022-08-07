@@ -37,6 +37,9 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
 ] # https://pypi.org/classifiers/
 
+[tool.poetry.scripts]
+pman = "pman:run"
+
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/kyleking/pman/issues"
 "Changelog" = "https://github.com/kyleking/pman/blob/main/docs/docs/CHANGELOG.md"

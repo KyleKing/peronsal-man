@@ -20,12 +20,18 @@ class Settings(BaseSettings):
         env_prefix = 'PMAN_'
 
 
+SETTINGS = Settings()
+"""Global settings instance."""
+
+
+# FIXME: Make this part of the default help output or separate subcommand
 @beartype
 def dump_config() -> None:
     """Dump pman configuration."""
+    pman_doc_path = SETTINGS.DOC_PATH.as_posix() if SETTINGS.DOC_PATH else ''
     key_lookup = (
-        ('PMAN_DOC_PATH', Settings().DOC_PATH or ''),
-        ('PMAN_SEARCH_TOOL', Settings().SEARCH_TOOL),
+        ('PMAN_DOC_PATH', pman_doc_path),
+        ('PMAN_SEARCH_TOOL', SETTINGS.SEARCH_TOOL),
     )
 
     console = Console()

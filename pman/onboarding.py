@@ -1,5 +1,3 @@
-"""Onboarding Command.
+"""Onboarding Command."""
 
-See: https://github.com/KyleKing/personal-man/issues/2
-
-"""
+# TODO: Implement (https://github.com/KyleKing/personal-man/issues/2)
