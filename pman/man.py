@@ -7,7 +7,7 @@ from pathlib import Path
 from beartype import beartype
 from rich.console import Console, ConsoleOptions, RenderResult
 from rich.markdown import Heading, Markdown
-from rich.prompt import InvalidResponse, PromptBase
+from rich.prompt import Prompt
 from rich.text import Text
 
 from .core.exceptions import NoManpageMatch
@@ -30,32 +30,6 @@ class CustomMarkdown(Markdown):
         super().__init__(*args, **kwargs)
 
 
-class FuzzyPrompt(PromptBase[str]):
-    """A Choice prompt that matches partial strings and ignores case.
-
-    For example, this matcher will match input 'fo' for choice Foo.
-
-    Copied from: https://github.com/Textualize/rich/pull/2192/files
-
-    """
-
-    response_type = str
-
-    def process_response(self, value: str) -> str:
-        """Check if the input is similar to exactly 1 choice"""
-        if not self.choices:
-            return PromptBase.process_response(self, value)
-        matches = []
-        for choice in self.choices:
-            if choice.lower().startswith(value.lower()):
-                matches.append(choice)
-
-        if len(matches) == 1:
-            return matches.pop()
-
-        raise InvalidResponse(self.illegal_choice_message)
-
-
 # ======================================================================================
 # manpage interaction
 
@@ -66,14 +40,22 @@ def match_man(*, search_token: str) -> Path:
     doc_dir = SETTINGS.DOC_PATH
     matches = [*doc_dir.glob(f'*{search_token}*.md')]
 
+    choices = ['fix', 'feat', 'docs']
+
     if len(matches) > 1:
         choices = [match.relative_to(doc_dir).as_posix() for match in matches]
-        selection = FuzzyPrompt.ask(
+        # TODO: Sort alphabetically && rank choices based on closeness to exact match?
+
+        # FIXME: Consider https://github.com/tmbo/questionary
+        console = Console()
+        for idx, choice in enumerate(choices):
+            console.print(f'{idx}. {choice}')
+        selection = Prompt.ask(
             'Which manpage would you like to see?',
-            choices=choices,
-            default=choices[0],
+            choices=[*map(str, range(len(choices)))],
+            default='0',
         )
-        return doc_dir / selection
+        return doc_dir / choices[int(selection)]
     elif len(matches) == 1:
         return matches[0]
 
