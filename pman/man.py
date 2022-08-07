@@ -1,15 +1,20 @@
 """man."""
 
+# FIXME: What is a better name for basic search?
+
 from pathlib import Path
 
 from beartype import beartype
 from rich.console import Console, ConsoleOptions, RenderResult
 from rich.markdown import Heading, Markdown
-from rich.prompt import Prompt
+from rich.prompt import InvalidResponse, PromptBase
 from rich.text import Text
 
 from .core.exceptions import NoManpageMatch
 from .settings import SETTINGS
+
+# ======================================================================================
+# Customize rich
 
 
 class CustomHeading(Heading):
@@ -25,6 +30,36 @@ class CustomMarkdown(Markdown):
         super().__init__(*args, **kwargs)
 
 
+class FuzzyPrompt(PromptBase[str]):
+    """A Choice prompt that matches partial strings and ignores case.
+
+    For example, this matcher will match input 'fo' for choice Foo.
+
+    Copied from: https://github.com/Textualize/rich/pull/2192/files
+
+    """
+
+    response_type = str
+
+    def process_response(self, value: str) -> str:
+        """Check if the input is similar to exactly 1 choice"""
+        if not self.choices:
+            return PromptBase.process_response(self, value)
+        matches = []
+        for choice in self.choices:
+            if choice.lower().startswith(value.lower()):
+                matches.append(choice)
+
+        if len(matches) == 1:
+            return matches.pop()
+
+        raise InvalidResponse(self.illegal_choice_message)
+
+
+# ======================================================================================
+# manpage interaction
+
+
 @beartype
 def match_man(*, search_token: str) -> Path:
     """Match the request personal manpage."""
@@ -33,7 +68,7 @@ def match_man(*, search_token: str) -> Path:
 
     if len(matches) > 1:
         choices = [match.relative_to(doc_dir).as_posix() for match in matches]
-        selection = Prompt.ask(
+        selection = FuzzyPrompt.ask(
             'Which manpage would you like to see?',
             choices=choices,
             default=choices[0],
@@ -52,8 +87,11 @@ def dump_man(*, man_path: Path) -> None:
 
     # TODO: provide option for PAGER, where path (instead of content) is passed?
     #   rich's built-in pager, doesn't pass the "--language md" necessary for bat
-    # with console.pager(styles=True):
-    #     console.print(man_path.read_text())
+    # # # with console.pager(styles=True):
+    # # #     console.print(man_path.read_text())
+    # from calcipy.proc_helpers import run_cmd
+    # out = run_cmd(f'$PAGER {man_path.as_posix()}')
+    # # ^ But, can't use run_cmd because it pipes STDOUT...
 
     with open(man_path) as man_file:
         markdown = CustomMarkdown(man_file.read())
