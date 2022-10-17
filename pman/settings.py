@@ -1,4 +1,4 @@
-"""pman Settings"""
+"""pman Settings."""
 
 from typing import Optional
 

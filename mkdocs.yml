@@ -2,6 +2,7 @@
 site_name: pman
 site_author: Kyle King
 site_description: pman project documentation
+site_url: https://pman.kyleking.me
 repo_name: kyleking/pman
 repo_url: https://github.com/kyleking/pman
 edit_uri: edit/main/docs
@@ -21,6 +22,15 @@ theme:
     - toc.autohide
 
 plugins:
+  - build_plantuml:
+      render: server   # or "local"
+      bin_path: /usr/local/bin/plantuml    # ignored when render: server
+      server: http://www.plantuml.com/plantuml    # official plantuml server
+      output_format: svg
+      diagram_root: docs/diagrams
+      output_folder: out
+      input_folder: src
+      input_extensions: puml
   - search
   - gen-files:
       scripts:

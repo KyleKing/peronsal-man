@@ -46,7 +46,7 @@ pman = "pman:run"
 
 [tool.poetry.dependencies]
 python = "^3.8.4"
-calcipy = ">=0.19.1"
+calcipy = ">=0.20.0"
 pydantic = ">=1.9.1"
 rich = ">=12.5.1"
 
