@@ -12,21 +12,21 @@
         <meta name="author" content="Kyle King">
       
       
-        <link rel="canonical" href="https://pman.kyleking.me/">
+        <link rel="canonical" href="https://pman.kyleking.me/reference/pman/controllers/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
     
     
       
-        <title>pman</title>
+        <title>controllers - pman</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -43,11 +43,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="css/mkdocstrings.css">
+      <link rel="stylesheet" href="../../../css/mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#personal-man" class="md-skip">
+        <a href="#pman.controllers" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="pman" class="md-header__button md-logo" aria-label="pman" data-md-component="logo">
+    <a href="../../.." title="pman" class="md-header__button md-logo" aria-label="pman" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              personal-man
+              controllers
             
           </span>
         </div>
@@ -190,12 +190,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="." class="md-tabs__link md-tabs__link--active">
+    <a href="../../.." class="md-tabs__link">
       personal-man
     </a>
   </li>
@@ -207,7 +205,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="docs/CHANGELOG/" class="md-tabs__link">
+    <a href="../../../docs/CHANGELOG/" class="md-tabs__link">
       Docs
     </a>
   </li>
@@ -222,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="modules/pman/_code_diagrams/" class="md-tabs__link">
+      <a href="../../../modules/pman/_code_diagrams/" class="md-tabs__link">
         Modules
       </a>
     </li>
@@ -232,13 +230,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="reference/pman/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Reference
       </a>
     </li>
@@ -266,7 +266,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="pman" class="md-nav__button md-logo" aria-label="pman" data-md-component="logo">
+    <a href="../../.." title="pman" class="md-nav__button md-logo" aria-label="pman" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -295,94 +295,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          personal-man
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         personal-man
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-status" class="md-nav__link">
-    Project Status
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    Contributing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#responsible-disclosure" class="md-nav__link">
-    Responsible Disclosure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -406,7 +323,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="docs/CHANGELOG/">Docs</a>
+          <a href="../../../docs/CHANGELOG/">Docs</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -427,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docs/CODE_TAG_SUMMARY/" class="md-nav__link">
+      <a href="../../../docs/CODE_TAG_SUMMARY/" class="md-nav__link">
         Task Summary
       </a>
     </li>
@@ -441,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docs/DEVELOPER_GUIDE/" class="md-nav__link">
+      <a href="../../../docs/DEVELOPER_GUIDE/" class="md-nav__link">
         Developer Notes
       </a>
     </li>
@@ -455,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docs/STYLE_GUIDE/" class="md-nav__link">
+      <a href="../../../docs/STYLE_GUIDE/" class="md-nav__link">
         Personal Style Guides
       </a>
     </li>
@@ -503,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="modules/pman/_code_diagrams/" class="md-nav__link">
+      <a href="../../../modules/pman/_code_diagrams/" class="md-nav__link">
         Pman
       </a>
     </li>
@@ -523,12 +440,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -549,12 +468,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
       
       
       
@@ -562,7 +483,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="reference/pman/">pman</a>
+          <a href="../">pman</a>
           
             <label for="__nav_4_1">
               <span class="md-nav__icon md-icon"></span>
@@ -583,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/cli/" class="md-nav__link">
+      <a href="../cli/" class="md-nav__link">
         cli
       </a>
     </li>
@@ -595,20 +516,22 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" checked>
       
       
       
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="reference/pman/controllers/">controllers</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">controllers</a>
           
             <label for="__nav_4_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -629,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/controllers/man_controller/" class="md-nav__link">
+      <a href="man_controller/" class="md-nav__link">
         man_controller
       </a>
     </li>
@@ -643,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/controllers/search_controller/" class="md-nav__link">
+      <a href="search_controller/" class="md-nav__link">
         search_controller
       </a>
     </li>
@@ -675,7 +598,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="reference/pman/core/">core</a>
+          <a href="../core/">core</a>
           
             <label for="__nav_4_1_3">
               <span class="md-nav__icon md-icon"></span>
@@ -696,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/core/exceptions/" class="md-nav__link">
+      <a href="../core/exceptions/" class="md-nav__link">
         exceptions
       </a>
     </li>
@@ -710,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/core/version/" class="md-nav__link">
+      <a href="../core/version/" class="md-nav__link">
         version
       </a>
     </li>
@@ -731,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/man/" class="md-nav__link">
+      <a href="../man/" class="md-nav__link">
         man
       </a>
     </li>
@@ -745,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/onboarding/" class="md-nav__link">
+      <a href="../onboarding/" class="md-nav__link">
         onboarding
       </a>
     </li>
@@ -759,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/search/" class="md-nav__link">
+      <a href="../search/" class="md-nav__link">
         search
       </a>
     </li>
@@ -773,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/settings/" class="md-nav__link">
+      <a href="../settings/" class="md-nav__link">
         settings
       </a>
     </li>
@@ -811,8 +734,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -821,50 +742,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-status" class="md-nav__link">
-    Project Status
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    Contributing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-of-conduct" class="md-nav__link">
-    Code of Conduct
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#responsible-disclosure" class="md-nav__link">
-    Responsible Disclosure
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    License
+  <a href="#pman.controllers" class="md-nav__link">
+    pman.controllers
   </a>
   
 </li>
@@ -883,49 +762,41 @@
                 
                   
 
-  <a href="https://github.com/kyleking/pman/edit/main/docs/README.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/kyleking/pman/edit/main/docs/pman/controllers/__init__.py" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="personal-man">personal-man<a class="headerlink" href="#personal-man" title="Permanent link">⚓︎</a></h1>
-<p>Personal Manpages</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">⚓︎</a></h2>
-<ol>
-<li>
-<p><code>poetry add</code></p>
-</li>
-<li>
-<p>&hellip;</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>import
-<span class="linenos" data-linenos="2 "></span>
-<span class="linenos" data-linenos="3 "></span><span class="c1"># &lt; TODO: Add example code here &gt;</span>
-</code></pre></div>
-</li>
-<li>
-<p>&hellip;</p>
-</li>
-</ol>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">⚓︎</a></h2>
-<!-- < TODO: Show an example (screenshots, terminal recording, etc.) > -->
+  <h1>controllers</h1>
 
-<p>For more example code, see the <a href="https://github.com/kyleking/pman/scripts">scripts</a> directory or the <a href="https://github.com/kyleking/pman/tests">tests</a>.</p>
-<h2 id="project-status">Project Status<a class="headerlink" href="#project-status" title="Permanent link">⚓︎</a></h2>
-<p>See the <code>Open Issues</code> and/or the <a href="docs/CODE_TAG_SUMMARY/">CODE_TAG_SUMMARY</a>. For release history, see the <a href="docs/CHANGELOG/">CHANGELOG</a>.</p>
-<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">⚓︎</a></h2>
-<p>We welcome pull requests! For your pull request to be accepted smoothly, we suggest that you first open a GitHub issue to discuss your idea. For resources on getting started with the code base, see the below documentation:</p>
-<ul>
-<li><a href="docs/DEVELOPER_GUIDE/">DEVELOPER_GUIDE</a></li>
-<li><a href="docs/STYLE_GUIDE/">STYLE_GUIDE</a></li>
-<li><a href="./docs/CONTRIBUTING.md">CONTRIBUTING</a></li>
-</ul>
-<h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">⚓︎</a></h2>
-<p>We follow the <a href="https://www.contributor-covenant.org">Contributor Covenant Code of Conduct</a>.</p>
-<h2 id="responsible-disclosure">Responsible Disclosure<a class="headerlink" href="#responsible-disclosure" title="Permanent link">⚓︎</a></h2>
-<p>If you have any security issue to report, please contact the project maintainers privately. You can reach us at <a href="mailto:dev.act.kyle@gmail.com">dev.act.kyle@gmail.com</a>.</p>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">⚓︎</a></h2>
-<p><a href="https://github.com/kyleking/pman/LICENSE">LICENSE</a></p>
+<div class="doc doc-object doc-module">
+
+
+<a id="pman.controllers"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Controllers.</p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
 
   <hr>
 <div class="md-source-file">
@@ -936,7 +807,7 @@
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 5, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
       
     
   </small>
@@ -960,15 +831,30 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+        
+        <a href="../cli/" class="md-footer__link md-footer__link--prev" aria-label="Previous: cli" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              cli
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="docs/CHANGELOG/" class="md-footer__link md-footer__link--next" aria-label="Next: Docs" rel="next">
+        <a href="man_controller/" class="md-footer__link md-footer__link--next" aria-label="Next: man_controller" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Docs
+              man_controller
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -999,14 +885,14 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.078830c0.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
-        <script src="_javascript/tables.js"></script>
+        <script src="../../../_javascript/tables.js"></script>
       
     
   </body>
