@@ -1,43 +1,57 @@
-# personal-man (pman)
+# personal-man
 
 Personal Manpages
 
-<!-- TODO: See https://github.com/KyleKing/calcipy/issues/38 -->
-
 ## Installation
 
-1. ...
+1. `poetry add `
 
 1. ...
 
    ```sh
-   echo Hello World!
+   import
+
+   # < TODO: Add example code here >
    ```
 
 1. ...
 
 ## Usage
 
-<!-- TODO: Show an example (screenshots, terminal recording, etc.) -->
+<!-- < TODO: Show an example (screenshots, terminal recording, etc.) > -->
 
-For more examples, see [Scripts](https://github.com/kyleking/pman/scripts) or [Tests](https://github.com/kyleking/pman/tests)
+For more example code, see the [scripts] directory or the [tests].
 
-## Roadmap
+## Project Status
 
-See the `Open Issues` and `Milestones` for current status and [./docs/CODE_TAG_SUMMARY.md](./docs/CODE_TAG_SUMMARY.md) for annotations in the source code.
-
-For release history, see the [./docs/CHANGELOG.md](./docs/CHANGELOG.md)
+See the `Open Issues` and/or the [CODE_TAG_SUMMARY]. For release history, see the [CHANGELOG].
 
 ## Contributing
 
-See the Developer Guide, Contribution Guidelines, etc
+We welcome pull requests! For your pull request to be accepted smoothly, we suggest that you first open a GitHub issue to discuss your idea. For resources on getting started with the code base, see the below documentation:
 
-- [./docs/DEVELOPER_GUIDE.md](./docs/DEVELOPER_GUIDE.md)
-- [./docs/STYLE_GUIDE.md](./docs/STYLE_GUIDE.md)
-- [./docs/CONTRIBUTING.md](./docs/CONTRIBUTING.md)
-- [./docs/CODE_OF_CONDUCT.md](./docs/CODE_OF_CONDUCT.md)
-- [./docs/SECURITY.md](./docs/SECURITY.md)
+- [DEVELOPER_GUIDE]
+- [STYLE_GUIDE]
+- [CONTRIBUTING]
+
+## Code of Conduct
+
+We follow the [Contributor Covenant Code of Conduct][contributor-covenant].
+
+## Responsible Disclosure
+
+If you have any security issue to report, please contact the project maintainers privately. You can reach us at [dev.act.kyle@gmail.com](mailto:dev.act.kyle@gmail.com).
 
 ## License
 
-[LICENSE](https://github.com/kyleking/pman/LICENSE)
+[LICENSE]
+
+[changelog]: ./docs/CHANGELOG.md
+[code_tag_summary]: ./docs/CODE_TAG_SUMMARY.md
+[contributing]: ./docs/CONTRIBUTING.md
+[contributor-covenant]: https://www.contributor-covenant.org
+[developer_guide]: ./docs/DEVELOPER_GUIDE.md
+[license]: https://github.com/kyleking/pman/LICENSE
+[scripts]: https://github.com/kyleking/pman/scripts
+[style_guide]: ./docs/STYLE_GUIDE.md
+[tests]: https://github.com/kyleking/pman/tests

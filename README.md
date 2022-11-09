@@ -1,4 +1,4 @@
-# personal-man (pman)
+# personal-man
 
 Personal Manpages
 
