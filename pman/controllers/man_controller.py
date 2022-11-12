@@ -2,6 +2,7 @@
 
 from cement import Controller, ex
 
+from ..core.exceptions import NoManpageMatch
 from ..man import man_action
 
 
@@ -19,14 +20,17 @@ class ManController(Controller):
         self.app.args.print_help()
 
     @ex(
-        help='Find Subcommand', arguments=[
+        help='Open personal manpage for provided subcommand', arguments=[
             (
-                ['-t', '--search-token'],
-                {'help': 'Search token', 'action': 'store', 'dest': 'search_token'},
+                ['man_name'],
+                {'help': 'Manpage Name (i.e. "rg" for "rg.md")'},
             ),
         ],
     )
-    def man(self) -> None:
+    def man(self) -> None:  # FIXME: Rename to 'show'
         """Find manpage by name."""
-        pargs = self.app.pargs
-        man_action(search_token=pargs.search_token)
+        man_name = self.app.pargs.man_name
+        try:
+            man_action(man_name=man_name)
+        except NoManpageMatch as exc:
+            print(exc)  # FIXME: Use rich?

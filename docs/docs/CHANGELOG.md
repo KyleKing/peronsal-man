@@ -11,5 +11,6 @@
 
 ### Refactor
 
+- bump copier template
 - switch to indexed prompt
 - remove configurability for PAGER and FIND

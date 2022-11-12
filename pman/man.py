@@ -3,6 +3,7 @@
 # FIXME: What is a better name for file search?
 
 from pathlib import Path
+from typing import Optional
 
 from beartype import beartype
 from rich.console import Console, ConsoleOptions, RenderResult
@@ -35,10 +36,10 @@ class CustomMarkdown(Markdown):
 
 
 @beartype
-def match_man(*, search_token: str) -> Path:
+def match_man(*, man_name: str) -> Path:
     """Match the request personal manpage."""
     doc_dir = SETTINGS.DOC_PATH
-    matches = [*doc_dir.glob(f'*{search_token}*.md')]
+    matches = [*doc_dir.glob(f'*{man_name}*.md')]
 
     choices = ['fix', 'feat', 'docs']
 
@@ -56,10 +57,11 @@ def match_man(*, search_token: str) -> Path:
             default='0',
         )
         return doc_dir / choices[int(selection)]
-    elif len(matches) == 1:
+
+    if len(matches) == 1:
         return matches[0]
 
-    raise NoManpageMatch(f'No known personal-manpage for {search_token}.md')
+    raise NoManpageMatch(f'No known personal-manpage for {man_name}.md')
 
 
 @beartype
@@ -75,17 +77,20 @@ def dump_man(*, man_path: Path) -> None:
     # out = run_cmd(f'$PAGER {man_path.as_posix()}')
     # # ^ But, can't use run_cmd because it pipes STDOUT...
 
-    with open(man_path) as man_file:
+    with man_path.open() as man_file:
         markdown = CustomMarkdown(man_file.read())
     console.print(markdown)
     console.print('\n')
 
 
 @beartype
-def man_action(*, search_token: str) -> None:
+def man_action(*, man_name: Optional[str]) -> None:
     """Full action for recognizing the user-requested personal-manpage."""
+    if not man_name:
+        raise NotImplementedError('Print a list of all known manpages!')
+
     # TODO: User try/except block to prompt user if they want to create the manpage when not found
     #   https://github.com/KyleKing/personal-man/issues/4
 
-    man_path = match_man(search_token=search_token)
+    man_path = match_man(man_name=man_name)
     dump_man(man_path=man_path)

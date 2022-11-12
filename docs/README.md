@@ -4,21 +4,19 @@ Personal Manpages
 
 ## Installation
 
-1. `poetry add `
-
-1. ...
+1. Install with pipx
 
    ```sh
-   import
-
-   # < TODO: Add example code here >
+   pipx install personal-man
    ```
 
-1. ...
+1. Run `pman` to check that installation succeeded and to see the available commands
+
+1. The help output will display the directory for your personal manpages, but you can change the default by exporting an environment variable: `PMAN_DOC_PATH`. I personally have a directory within my main `Obsidian` vault that is searched by `pman`
 
 ## Usage
 
-<!-- < TODO: Show an example (screenshots, terminal recording, etc.) > -->
+<!-- FIXME: Capture a screen recording/gif of use! -->
 
 For more example code, see the [scripts] directory or the [tests].
 

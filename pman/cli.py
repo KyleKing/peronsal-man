@@ -1,5 +1,7 @@
 """pman Command Line."""
 
+import traceback
+
 from cement import App, TestApp, init_defaults
 from cement.core.exc import CaughtSignal
 from loguru import logger
@@ -48,7 +50,6 @@ def run() -> None:
             app.exit_code = 1
 
             if app.debug is True:
-                import traceback
                 traceback.print_exc()
 
         except CLIError as exc:
@@ -56,7 +57,6 @@ def run() -> None:
             app.exit_code = 1
 
             if app.debug is True:
-                import traceback
                 traceback.print_exc()
 
         except CaughtSignal:

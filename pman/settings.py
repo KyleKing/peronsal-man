@@ -1,9 +1,11 @@
 """pman Settings."""
 
+from os import environ
+from pathlib import Path
 from typing import Optional
 
 from beartype import beartype
-from pydantic import BaseSettings, DirectoryPath
+from pydantic import BaseSettings, DirectoryPath, Field
 from rich.console import Console
 from rich.table import Table
 
@@ -11,11 +13,13 @@ from rich.table import Table
 #   so that no code is dependent on the rich library
 #   Examples: cli_print, cli_table, cli_prompt, etc.
 
+DEF_DOC_PATH = Path(environ.get('XDG_DATA_HOME', '~/.local')).expanduser() / 'pman'
+
 
 class Settings(BaseSettings):
     """Configurable Settings (Environment Variables)."""
 
-    DOC_PATH: Optional[DirectoryPath]
+    DOC_PATH: DirectoryPath = Field(default=DEF_DOC_PATH)
 
     SEARCH_TOOL: str = 'grep'
 
@@ -30,9 +34,8 @@ SETTINGS = Settings()
 
 # FIXME: Make this part of the default help output or separate subcommand
 @beartype
-def dump_config(console) -> None:
+def dump_config(console: Optional[Console]) -> None:
     """Dump pman configuration."""
-    # FIXME: make this a global config like doit_globals instead of DI
     if not console:
         console = Console()
     pman_doc_path = SETTINGS.DOC_PATH.as_posix() if SETTINGS.DOC_PATH else ''
