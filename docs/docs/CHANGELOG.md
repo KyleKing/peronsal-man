@@ -11,6 +11,7 @@
 
 ### Refactor
 
+- switch dump_config to Output class
 - revisit project and start cleanup
 - bump copier template
 - switch to indexed prompt

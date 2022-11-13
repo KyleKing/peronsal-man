@@ -2,7 +2,7 @@
 
 from loguru import logger
 
-__version__ = '0.0.1'
+__version__ = '1.0.0'
 __pkg_name__ = 'pman'
 
 logger.disable(__pkg_name__)

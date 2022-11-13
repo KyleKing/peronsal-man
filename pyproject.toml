@@ -9,7 +9,7 @@ pythons = ["3.10"]
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.0.1"
+version = "1.0.0"
 version_files = ["pyproject.toml", "pman/__init__.py"]
 
 [tool.isort]
@@ -24,7 +24,7 @@ multi_line_output = 5
 
 [tool.poetry]
 name = "pman"
-version = "0.0.1"
+version = "1.0.0"
 description = "pman: Personal Manpages"
 license = "MIT"
 authors = ["Kyle King <dev.act.kyle@gmail.com>"]
