@@ -2,16 +2,11 @@
 
 from os import environ
 from pathlib import Path
-from typing import Optional
 
 from beartype import beartype
 from pydantic import BaseSettings, DirectoryPath, Field
 from rich.console import Console
 from rich.table import Table
-
-# FIXME: Implement a wrapper of rich that abstracts common operations
-#   so that no code is dependent on the rich library
-#   Examples: cli_print, cli_table, cli_prompt, etc.
 
 DEF_DOC_PATH = Path(environ.get('XDG_DATA_HOME', '~/.local')).expanduser() / 'pman'
 
@@ -34,7 +29,7 @@ SETTINGS = Settings()
 
 # FIXME: Make this part of the default help output or separate subcommand
 @beartype
-def dump_config(console: Optional[Console]) -> None:
+def dump_config(console: Console | None) -> None:
     """Dump pman configuration."""
     if not console:
         console = Console()

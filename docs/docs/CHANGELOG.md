@@ -11,6 +11,7 @@
 
 ### Refactor
 
+- revisit project and start cleanup
 - bump copier template
 - switch to indexed prompt
 - remove configurability for PAGER and FIND

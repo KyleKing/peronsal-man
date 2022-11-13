@@ -7,8 +7,8 @@ from cement.core.exc import CaughtSignal
 from loguru import logger
 
 from . import __pkg_name__
-from .controllers.man_controller import ManController
 from .controllers.search_controller import SearchController
+from .controllers.show_controller import ShowController
 from .core.exceptions import CLIError
 
 # Initialize nested dictionary for storing application defaults
@@ -27,11 +27,11 @@ class CLIApp(App):
         exit_on_close = True
         """Call sys.exit() on close."""
 
-        handlers = [ManController, SearchController]
+        handlers = [ShowController, SearchController]
         """Register handlers."""
 
 
-class CLIAppTest(TestApp, CLIApp):
+class CLIAppTest(TestApp, CLIApp):  # pylint: disable=R0901
     """A sub-class of CLIApp that is better suited for testing."""
 
     class Meta:
@@ -46,14 +46,14 @@ def run() -> None:
             app.run()
 
         except AssertionError as exc:
-            logger.error(f'AssertionError > {exc.args[0]}')
+            logger.error(f'AssertionError > {exc.args[0]}')  # noqa: TC400
             app.exit_code = 1
 
             if app.debug is True:
                 traceback.print_exc()
 
         except CLIError as exc:
-            logger.error(f'CLIError > {exc.args[0]}')
+            logger.error(f'CLIError > {exc.args[0]}')  # noqa: TC400
             app.exit_code = 1
 
             if app.debug is True:

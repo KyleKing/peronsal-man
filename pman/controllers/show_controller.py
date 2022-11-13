@@ -1,16 +1,18 @@
-"""Man Controller."""
+"""`show` CLI Controller."""
 
 from cement import Controller, ex
 
 from ..core.exceptions import NoManpageMatch
-from ..man import man_action
+from ..show import show_action
+
+HELP_TEXT = 'Show the personal manpage matching the provided argument or select from nearest matches'  # noqa: Q440
 
 
-class ManController(Controller):
-    """man CLI Controller."""
+class ShowController(Controller):  # pylint: disable=R0901
+    """`show` CLI Controller."""
 
     class Meta:
-        label = 'man'
+        label = 'show'
 
         arguments = []
         """Controller level arguments. ex: 'pman --version'."""
@@ -20,17 +22,17 @@ class ManController(Controller):
         self.app.args.print_help()
 
     @ex(
-        help='Open personal manpage for provided subcommand', arguments=[
+        help=HELP_TEXT, arguments=[
             (
                 ['man_name'],
-                {'help': 'Manpage Name (i.e. "rg" for "rg.md")'},
+                {'help': 'Personal Manpage Name (i.e. "rg" for "rg.md")'},
             ),
         ],
     )
-    def man(self) -> None:  # FIXME: Rename to 'show'
+    def show(self) -> None:
         """Find manpage by name."""
         man_name = self.app.pargs.man_name
         try:
-            man_action(man_name=man_name)
+            show_action(man_name=man_name)
         except NoManpageMatch as exc:
             print(exc)  # FIXME: Use rich?
