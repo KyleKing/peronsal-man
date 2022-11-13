@@ -28,13 +28,14 @@ class ShowController(Controller):  # pylint: disable=R0901
         help=HELP_TEXT, arguments=[
             (
                 ['man_name'],
-                {'help': 'Personal Manpage Name (i.e. "rg" for "rg.md")'},
+                {'help': 'Personal Manpage Name (i.e. "rg" for "rg.md")', 'nargs': '?'},
             ),
             (
                 ['-e', '--edit'],
                 {
                     'help': 'If set, open the manpage in `$EDITOR`',
                     'action': argparse.BooleanOptionalAction,
+                    'default': False,
                 },
             ),
         ],
@@ -47,5 +48,5 @@ class ShowController(Controller):  # pylint: disable=R0901
             show_action(man_name=man_name, edit=edit)
         except NoManpageMatch as exc:
             output = Output()
-            output.write(repr(exc), styles='red')
+            output.write(str(exc))
             self.app.exit_code = 1

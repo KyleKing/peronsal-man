@@ -18,7 +18,7 @@ Personal Manpages
 
 ## Usage
 
-<!-- FIXME: Capture a screen recording/gif of use! -->
+![VHS Demo](./demo.gif)
 
 For more example code, see the [scripts] directory or the [tests].
 

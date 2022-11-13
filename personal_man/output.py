@@ -42,21 +42,21 @@ class Output:
         self.console = console or Console()
 
     @beartype
-    def write(self, msg: str, styles: str = '') -> None:
+    def write(self, msg: str, style: str = '') -> None:
         """Supports rich-cli formatting, but whole line styling is preferred."""
-        self.console.print(msg, styles)
+        self.console.print(msg, style=style)
 
     @beartype
     def write_new_line(self) -> None:
         """Print a new line."""
-        self.write('\n')
+        self.write('')
 
     @beartype
     def write_md(self, path_md: Path) -> None:
         """Write markdown to the output destination."""
         # TODO: provide option for PAGER, where path (instead of content) is passed?
         #   rich's built-in pager, doesn't pass the "--language md" necessary for bat
-        # # with console.pager(styles=True):
+        # # with console.pager(style=True):
         # #     console.print(man_path.read_text())
         # from calcipy.proc_helpers import run_cmd
         # out = run_cmd(f'$PAGER {man_path.as_posix()}')

@@ -13,14 +13,15 @@ from .settings import SETTINGS
 @beartype
 def get_files(doc_dir: Path, man_name: str | None = None) -> list[Path]:
     """Return all files matching the optional search string in `doc_dir`."""
-    pattern = '*{man_name}*' if man_name else '*'
-    return [*doc_dir.rglob(f'{pattern}.md')]
+    pattern = f'*{man_name}*' if man_name else '*'
+    return [*sorted(doc_dir.rglob(f'{pattern}.md'))]
 
 
 @beartype
 def match_man(*, man_name: str) -> Path:
     """Match the request personal manpage."""
-    matches = get_files(SETTINGS.DOC_PATH, man_name)
+    doc_dir = SETTINGS.DOC_PATH
+    matches = get_files(doc_dir, man_name)
     if len(matches) > 1:
         output = Output()
         return output.ask_file('Which manpage would you like to see?', doc_dir, matches)
