@@ -4,6 +4,9 @@ requires = [
   "poetry-core>=1.0.7",
 ]
 
+[tool.calcipy.test]
+pythons = ["3.10"]
+
 [tool.commitizen]
 name = "cz_conventional_commits"
 version = "0.0.1"
@@ -52,8 +55,6 @@ pydantic = ">=1.9.1"
 questionary = ">=1.10.0"
 rich = ">=12.5.1"
 
-[tool.poetry.dev-dependencies]
-calcipy = { version = "*", extras = ["dev", "lint", "test"] }
-
 [tool.poetry.group.dev.dependencies]
-pytest-cache-assert = "^3.0.6"
+calcipy = { version = "*", extras = ["dev", "lint", "test"] }
+pytest-cache-assert = ">=3.0.6"

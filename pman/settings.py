@@ -5,8 +5,8 @@ from pathlib import Path
 
 from beartype import beartype
 from pydantic import BaseSettings, DirectoryPath, Field
-from rich.console import Console
-from rich.table import Table
+
+from .output import Output
 
 DEF_DOC_PATH = Path(environ.get('XDG_DATA_HOME', '~/.local')).expanduser() / 'pman'
 
@@ -29,19 +29,13 @@ SETTINGS = Settings()
 
 # FIXME: Make this part of the default help output or separate subcommand
 @beartype
-def dump_config(console: Console | None) -> None:
+def dump_config(output: Output | None = None) -> None:
     """Dump pman configuration."""
-    if not console:
-        console = Console()
-    pman_doc_path = SETTINGS.DOC_PATH.as_posix() if SETTINGS.DOC_PATH else ''
-    key_lookup = (
-        ('PMAN_DOC_PATH', pman_doc_path),
-        ('PMAN_SEARCH_TOOL', SETTINGS.SEARCH_TOOL),
-    )
-
-    table = Table(show_header=True, header_style='bold')
-    table.add_column('Environment Variable')
-    table.add_column('Value')
-    for key_name, value in key_lookup:
-        table.add_row(key_name, value)
-    console.print(table)
+    output = output or Output()
+    pman_doc_path = SETTINGS.DOC_PATH.as_posix()
+    columns = ['Environment Variable', 'Value']
+    rows = [
+        ['PMAN_DOC_PATH', pman_doc_path],
+        ['PMAN_SEARCH_TOOL', SETTINGS.SEARCH_TOOL],
+    ]
+    output.write_table(columns=columns, rows=rows)

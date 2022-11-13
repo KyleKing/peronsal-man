@@ -47,10 +47,22 @@ poetry run doit run lock document deploy_docs publish
 ## Current Status
 
 <!-- {cts} COVERAGE -->
-| File               |   Statements |   Missing |   Excluded | Coverage   |
-|--------------------|--------------|-----------|------------|------------|
-| `pman/__init__.py` |            4 |         0 |          0 | 100.0%     |
-| **Totals**         |            4 |         0 |          0 | 100.0%     |
+| File                                    |   Statements |   Missing |   Excluded | Coverage   |
+|-----------------------------------------|--------------|-----------|------------|------------|
+| `pman/__init__.py`                      |            6 |         0 |          0 | 100.0%     |
+| `pman/cli.py`                           |           39 |        17 |          0 | 56.4%      |
+| `pman/controllers/__init__.py`          |            0 |         0 |          0 | 100.0%     |
+| `pman/controllers/search_controller.py` |           14 |         3 |          0 | 78.6%      |
+| `pman/controllers/show_controller.py`   |           18 |         6 |          0 | 66.7%      |
+| `pman/core/__init__.py`                 |            0 |         0 |          0 | 100.0%     |
+| `pman/core/exceptions.py`               |            4 |         0 |          0 | 100.0%     |
+| `pman/core/version.py`                  |            8 |         8 |          0 | 0.0%       |
+| `pman/onboarding.py`                    |            0 |         0 |          0 | 100.0%     |
+| `pman/output.py`                        |           54 |        18 |          0 | 66.7%      |
+| `pman/search.py`                        |            6 |         1 |          0 | 83.3%      |
+| `pman/settings.py`                      |           21 |         0 |          0 | 100.0%     |
+| `pman/show.py`                          |           26 |        15 |          0 | 42.3%      |
+| **Totals**                              |          196 |        68 |          0 | 65.3%      |
 
-Generated on: 2022-08-05
+Generated on: 2022-11-12
 <!-- {cte} -->
