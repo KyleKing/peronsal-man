@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://pman.kyleking.me/">
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#personal-man" class="md-skip">
+        <a href="#personal-man-pman" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              personal-man
+              personal-man (`pman`)
             
           </span>
         </div>
@@ -118,6 +118,7 @@
     
       <form class="md-header__option" data-md-component="palette">
         
+          
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="green"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
@@ -196,7 +197,7 @@
 
   <li class="md-tabs__item">
     <a href="." class="md-tabs__link md-tabs__link--active">
-      personal-man
+      personal-man (`pman`)
     </a>
   </li>
 
@@ -307,12 +308,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          personal-man
+          personal-man (`pman`)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
-        personal-man
+        personal-man (`pman`)
       </a>
       
         
@@ -362,6 +363,19 @@
   <a href="#code-of-conduct" class="md-nav__link">
     Code of Conduct
   </a>
+  
+    <nav class="md-nav" aria-label="Code of Conduct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-source-status" class="md-nav__link">
+    Open Source Status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -629,8 +643,8 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/controllers/man_controller/" class="md-nav__link">
-        man_controller
+      <a href="reference/pman/controllers/search_controller/" class="md-nav__link">
+        search_controller
       </a>
     </li>
   
@@ -643,8 +657,8 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/controllers/search_controller/" class="md-nav__link">
-        search_controller
+      <a href="reference/pman/controllers/show_controller/" class="md-nav__link">
+        show_controller
       </a>
     </li>
   
@@ -731,8 +745,8 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/man/" class="md-nav__link">
-        man
+      <a href="reference/pman/onboarding/" class="md-nav__link">
+        onboarding
       </a>
     </li>
   
@@ -745,8 +759,8 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/pman/onboarding/" class="md-nav__link">
-        onboarding
+      <a href="reference/pman/output/" class="md-nav__link">
+        output
       </a>
     </li>
   
@@ -775,6 +789,20 @@
     <li class="md-nav__item">
       <a href="reference/pman/settings/" class="md-nav__link">
         settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reference/pman/show/" class="md-nav__link">
+        show
       </a>
     </li>
   
@@ -853,6 +881,19 @@
     Code of Conduct
   </a>
   
+    <nav class="md-nav" aria-label="Code of Conduct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-source-status" class="md-nav__link">
+    Open Source Status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -889,26 +930,24 @@
   </a>
 
 
-<h1 id="personal-man">personal-man<a class="headerlink" href="#personal-man" title="Permanent link">⚓︎</a></h1>
+<h1 id="personal-man-pman">personal-man (<code>pman</code>)<a class="headerlink" href="#personal-man-pman" title="Permanent link">⚓︎</a></h1>
 <p>Personal Manpages</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">⚓︎</a></h2>
 <ol>
 <li>
-<p><code>poetry add</code></p>
-</li>
-<li>
-<p>&hellip;</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>import
-<span class="linenos" data-linenos="2 "></span>
-<span class="linenos" data-linenos="3 "></span><span class="c1"># &lt; TODO: Add example code here &gt;</span>
+<p>Install with pipx</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>pipx install personal-man
 </code></pre></div>
 </li>
 <li>
-<p>&hellip;</p>
+<p>Run <code>pman</code> to check that installation succeeded and to see the available commands</p>
+</li>
+<li>
+<p>The help output will display the directory for your personal manpages, but you can change the default by exporting an environment variable: <code>PMAN_DOC_PATH</code>. I personally have a directory within my main Obsidian vault so that I can edit the files in <a href="https://obsidian.md/">Obsidian</a> and search with <code>pman</code></p>
 </li>
 </ol>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">⚓︎</a></h2>
-<!-- < TODO: Show an example (screenshots, terminal recording, etc.) > -->
+<!-- FIXME: Capture a screen recording/gif of use! -->
 
 <p>For more example code, see the <a href="https://github.com/kyleking/pman/scripts">scripts</a> directory or the <a href="https://github.com/kyleking/pman/tests">tests</a>.</p>
 <h2 id="project-status">Project Status<a class="headerlink" href="#project-status" title="Permanent link">⚓︎</a></h2>
@@ -918,10 +957,11 @@
 <ul>
 <li><a href="docs/DEVELOPER_GUIDE/">DEVELOPER_GUIDE</a></li>
 <li><a href="docs/STYLE_GUIDE/">STYLE_GUIDE</a></li>
-<li><a href="./docs/CONTRIBUTING.md">CONTRIBUTING</a></li>
 </ul>
 <h2 id="code-of-conduct">Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Permanent link">⚓︎</a></h2>
 <p>We follow the <a href="https://www.contributor-covenant.org">Contributor Covenant Code of Conduct</a>.</p>
+<h3 id="open-source-status">Open Source Status<a class="headerlink" href="#open-source-status" title="Permanent link">⚓︎</a></h3>
+<p>We try to reasonably meet most aspects of the &ldquo;OpenSSF scorecard&rdquo; from <a href="https://deps.dev/pypi/pman">Open Source Insights</a></p>
 <h2 id="responsible-disclosure">Responsible Disclosure<a class="headerlink" href="#responsible-disclosure" title="Permanent link">⚓︎</a></h2>
 <p>If you have any security issue to report, please contact the project maintainers privately. You can reach us at <a href="mailto:dev.act.kyle@gmail.com">dev.act.kyle@gmail.com</a>.</p>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">⚓︎</a></h2>
@@ -932,7 +972,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2022</span>
       
         <br>
         Created:
@@ -999,10 +1039,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       

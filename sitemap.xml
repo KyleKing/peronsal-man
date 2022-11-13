@@ -2,97 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pman.kyleking.me/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/docs/CHANGELOG/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/docs/CODE_TAG_SUMMARY/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/docs/DEVELOPER_GUIDE/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/docs/STYLE_GUIDE/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/modules/pman/_code_diagrams/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/cli/</loc>
-         <lastmod>2022-11-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pman.kyleking.me/reference/pman/man/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/onboarding/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pman.kyleking.me/reference/pman/output/</loc>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/search/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/settings/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pman.kyleking.me/reference/pman/show/</loc>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/controllers/</loc>
-         <lastmod>2022-11-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pman.kyleking.me/reference/pman/controllers/man_controller/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/controllers/search_controller/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://pman.kyleking.me/reference/pman/controllers/show_controller/</loc>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/core/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/core/exceptions/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pman.kyleking.me/reference/pman/core/version/</loc>
-         <lastmod>2022-11-09</lastmod>
+         <lastmod>2022-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://pman.kyleking.me/reference/pman/controllers/search_controller/">
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -120,6 +120,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="green"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
@@ -194,7 +195,7 @@
 
   <li class="md-tabs__item">
     <a href="../../../.." class="md-tabs__link">
-      personal-man
+      personal-man (`pman`)
     </a>
   </li>
 
@@ -298,7 +299,7 @@
   
     <li class="md-nav__item">
       <a href="../../../.." class="md-nav__link">
-        personal-man
+        personal-man (`pman`)
       </a>
     </li>
   
@@ -550,20 +551,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../man_controller/" class="md-nav__link">
-        man_controller
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -677,6 +664,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../show_controller/" class="md-nav__link">
+        show_controller
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -757,8 +758,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../man/" class="md-nav__link">
-        man
+      <a href="../../onboarding/" class="md-nav__link">
+        onboarding
       </a>
     </li>
   
@@ -771,8 +772,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../onboarding/" class="md-nav__link">
-        onboarding
+      <a href="../../output/" class="md-nav__link">
+        output
       </a>
     </li>
   
@@ -801,6 +802,20 @@
     <li class="md-nav__item">
       <a href="../../settings/" class="md-nav__link">
         settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../show/" class="md-nav__link">
+        show
       </a>
     </li>
   
@@ -979,31 +994,31 @@
 
         <details class="quote">
           <summary>Source code in <code>pman/controllers/search_controller.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 8 "></span><span class="k">class</span> <span class="nc">SearchController</span><span class="p">(</span><span class="n">Controller</span><span class="p">):</span>
-<span class="linenos" data-linenos=" 9 "></span>    <span class="sd">&quot;&quot;&quot;Search CLI Controller.&quot;&quot;&quot;</span>
-<span class="linenos" data-linenos="10 "></span>
-<span class="linenos" data-linenos="11 "></span>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-<span class="linenos" data-linenos="12 "></span>        <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;search&#39;</span>
-<span class="linenos" data-linenos="13 "></span>
-<span class="linenos" data-linenos="14 "></span>        <span class="n">arguments</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="linenos" data-linenos="15 "></span>        <span class="sd">&quot;&quot;&quot;Controller level arguments. ex: &#39;pman --version&#39;.&quot;&quot;&quot;</span>
-<span class="linenos" data-linenos="16 "></span>
-<span class="linenos" data-linenos="17 "></span>    <span class="k">def</span> <span class="nf">_default</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="linenos" data-linenos="18 "></span>        <span class="sd">&quot;&quot;&quot;Default action if no sub-command is passed.&quot;&quot;&quot;</span>
-<span class="linenos" data-linenos="19 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">print_help</span><span class="p">()</span>
-<span class="linenos" data-linenos="20 "></span>
-<span class="linenos" data-linenos="21 "></span>    <span class="nd">@ex</span><span class="p">(</span>
-<span class="linenos" data-linenos="22 "></span>        <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Find Subcommand&#39;</span><span class="p">,</span> <span class="n">arguments</span><span class="o">=</span><span class="p">[</span>
-<span class="linenos" data-linenos="23 "></span>            <span class="p">(</span>
-<span class="linenos" data-linenos="24 "></span>                <span class="p">[</span><span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--search-token&#39;</span><span class="p">],</span>
-<span class="linenos" data-linenos="25 "></span>                <span class="p">{</span><span class="s1">&#39;help&#39;</span><span class="p">:</span> <span class="s1">&#39;Search token&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">:</span> <span class="s1">&#39;store&#39;</span><span class="p">,</span> <span class="s1">&#39;dest&#39;</span><span class="p">:</span> <span class="s1">&#39;search_token&#39;</span><span class="p">},</span>
-<span class="linenos" data-linenos="26 "></span>            <span class="p">),</span>
-<span class="linenos" data-linenos="27 "></span>        <span class="p">],</span>
-<span class="linenos" data-linenos="28 "></span>    <span class="p">)</span>
-<span class="linenos" data-linenos="29 "></span>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="linenos" data-linenos="30 "></span>        <span class="sd">&quot;&quot;&quot;Find manpage by searching with a regular expression or text string.&quot;&quot;&quot;</span>
-<span class="linenos" data-linenos="31 "></span>        <span class="n">pargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">pargs</span>
-<span class="linenos" data-linenos="32 "></span>        <span class="n">search_action</span><span class="p">(</span><span class="n">search_token</span><span class="o">=</span><span class="n">pargs</span><span class="o">.</span><span class="n">search_token</span><span class="p">)</span>
+          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="10 "></span><span class="k">class</span> <span class="nc">SearchController</span><span class="p">(</span><span class="n">Controller</span><span class="p">):</span>  <span class="c1"># pylint: disable=R0901</span>
+<span class="linenos" data-linenos="11 "></span>    <span class="sd">&quot;&quot;&quot;Search CLI Controller.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="12 "></span>
+<span class="linenos" data-linenos="13 "></span>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+<span class="linenos" data-linenos="14 "></span>        <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;search&#39;</span>
+<span class="linenos" data-linenos="15 "></span>
+<span class="linenos" data-linenos="16 "></span>        <span class="n">arguments</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos" data-linenos="17 "></span>        <span class="sd">&quot;&quot;&quot;Controller level arguments. ex: &#39;pman --version&#39;.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="18 "></span>
+<span class="linenos" data-linenos="19 "></span>    <span class="k">def</span> <span class="nf">_default</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos" data-linenos="20 "></span>        <span class="sd">&quot;&quot;&quot;Default action if no sub-command is passed.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="21 "></span>        <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">print_help</span><span class="p">()</span>
+<span class="linenos" data-linenos="22 "></span>
+<span class="linenos" data-linenos="23 "></span>    <span class="nd">@ex</span><span class="p">(</span>
+<span class="linenos" data-linenos="24 "></span>        <span class="n">help</span><span class="o">=</span><span class="n">HELP_TEXT</span><span class="p">,</span> <span class="n">arguments</span><span class="o">=</span><span class="p">[</span>
+<span class="linenos" data-linenos="25 "></span>            <span class="p">(</span>
+<span class="linenos" data-linenos="26 "></span>                <span class="p">[</span><span class="s1">&#39;search_token&#39;</span><span class="p">],</span>
+<span class="linenos" data-linenos="27 "></span>                <span class="p">{</span><span class="s1">&#39;help&#39;</span><span class="p">:</span> <span class="s1">&#39;Search string&#39;</span><span class="p">},</span>
+<span class="linenos" data-linenos="28 "></span>            <span class="p">),</span>
+<span class="linenos" data-linenos="29 "></span>        <span class="p">],</span>
+<span class="linenos" data-linenos="30 "></span>    <span class="p">)</span>
+<span class="linenos" data-linenos="31 "></span>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos" data-linenos="32 "></span>        <span class="sd">&quot;&quot;&quot;Find manpage by searching with a regular expression or text string.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="33 "></span>        <span class="n">search_token</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">pargs</span><span class="o">.</span><span class="n">search_token</span>
+<span class="linenos" data-linenos="34 "></span>        <span class="n">search_action</span><span class="p">(</span><span class="n">search_token</span><span class="o">=</span><span class="n">search_token</span><span class="p">)</span>
 </code></pre></div>
         </details>
 
@@ -1035,11 +1050,11 @@
 
         <details class="quote">
           <summary>Source code in <code>pman/controllers/search_controller.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="11 "></span><span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
-<span class="linenos" data-linenos="12 "></span>    <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;search&#39;</span>
-<span class="linenos" data-linenos="13 "></span>
-<span class="linenos" data-linenos="14 "></span>    <span class="n">arguments</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="linenos" data-linenos="15 "></span>    <span class="sd">&quot;&quot;&quot;Controller level arguments. ex: &#39;pman --version&#39;.&quot;&quot;&quot;</span>
+          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="13 "></span><span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
+<span class="linenos" data-linenos="14 "></span>    <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;search&#39;</span>
+<span class="linenos" data-linenos="15 "></span>
+<span class="linenos" data-linenos="16 "></span>    <span class="n">arguments</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="linenos" data-linenos="17 "></span>    <span class="sd">&quot;&quot;&quot;Controller level arguments. ex: &#39;pman --version&#39;.&quot;&quot;&quot;</span>
 </code></pre></div>
         </details>
 
@@ -1105,18 +1120,18 @@
 
       <details class="quote">
         <summary>Source code in <code>pman/controllers/search_controller.py</code></summary>
-        <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="21 "></span><span class="nd">@ex</span><span class="p">(</span>
-<span class="linenos" data-linenos="22 "></span>    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Find Subcommand&#39;</span><span class="p">,</span> <span class="n">arguments</span><span class="o">=</span><span class="p">[</span>
-<span class="linenos" data-linenos="23 "></span>        <span class="p">(</span>
-<span class="linenos" data-linenos="24 "></span>            <span class="p">[</span><span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--search-token&#39;</span><span class="p">],</span>
-<span class="linenos" data-linenos="25 "></span>            <span class="p">{</span><span class="s1">&#39;help&#39;</span><span class="p">:</span> <span class="s1">&#39;Search token&#39;</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">:</span> <span class="s1">&#39;store&#39;</span><span class="p">,</span> <span class="s1">&#39;dest&#39;</span><span class="p">:</span> <span class="s1">&#39;search_token&#39;</span><span class="p">},</span>
-<span class="linenos" data-linenos="26 "></span>        <span class="p">),</span>
-<span class="linenos" data-linenos="27 "></span>    <span class="p">],</span>
-<span class="linenos" data-linenos="28 "></span><span class="p">)</span>
-<span class="linenos" data-linenos="29 "></span><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="linenos" data-linenos="30 "></span>    <span class="sd">&quot;&quot;&quot;Find manpage by searching with a regular expression or text string.&quot;&quot;&quot;</span>
-<span class="linenos" data-linenos="31 "></span>    <span class="n">pargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">pargs</span>
-<span class="linenos" data-linenos="32 "></span>    <span class="n">search_action</span><span class="p">(</span><span class="n">search_token</span><span class="o">=</span><span class="n">pargs</span><span class="o">.</span><span class="n">search_token</span><span class="p">)</span>
+        <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="23 "></span><span class="nd">@ex</span><span class="p">(</span>
+<span class="linenos" data-linenos="24 "></span>    <span class="n">help</span><span class="o">=</span><span class="n">HELP_TEXT</span><span class="p">,</span> <span class="n">arguments</span><span class="o">=</span><span class="p">[</span>
+<span class="linenos" data-linenos="25 "></span>        <span class="p">(</span>
+<span class="linenos" data-linenos="26 "></span>            <span class="p">[</span><span class="s1">&#39;search_token&#39;</span><span class="p">],</span>
+<span class="linenos" data-linenos="27 "></span>            <span class="p">{</span><span class="s1">&#39;help&#39;</span><span class="p">:</span> <span class="s1">&#39;Search string&#39;</span><span class="p">},</span>
+<span class="linenos" data-linenos="28 "></span>        <span class="p">),</span>
+<span class="linenos" data-linenos="29 "></span>    <span class="p">],</span>
+<span class="linenos" data-linenos="30 "></span><span class="p">)</span>
+<span class="linenos" data-linenos="31 "></span><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="linenos" data-linenos="32 "></span>    <span class="sd">&quot;&quot;&quot;Find manpage by searching with a regular expression or text string.&quot;&quot;&quot;</span>
+<span class="linenos" data-linenos="33 "></span>    <span class="n">search_token</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">pargs</span><span class="o">.</span><span class="n">search_token</span>
+<span class="linenos" data-linenos="34 "></span>    <span class="n">search_action</span><span class="p">(</span><span class="n">search_token</span><span class="o">=</span><span class="n">search_token</span><span class="p">)</span>
 </code></pre></div>
       </details>
   </div>
@@ -1145,11 +1160,11 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2022</span>
       
     
   </small>
@@ -1174,7 +1189,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../man_controller/" class="md-footer__link md-footer__link--prev" aria-label="Previous: man_controller" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: controllers" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1183,20 +1198,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              man_controller
+              controllers
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../core/" class="md-footer__link md-footer__link--next" aria-label="Next: core" rel="next">
+        <a href="../show_controller/" class="md-footer__link md-footer__link--next" aria-label="Next: show_controller" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              core
+              show_controller
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1227,10 +1242,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "../../../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "toc.autohide"], "search": "../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
