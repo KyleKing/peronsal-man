@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - docs/demo.tape
+  workflow_dispatch:  # For manual runs
 
 jobs:
   vhs:
