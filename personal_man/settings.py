@@ -16,8 +16,6 @@ class Settings(BaseSettings):
 
     DOC_PATH: DirectoryPath = Field(default=DEF_DOC_PATH)
 
-    SEARCH_TOOL: str = 'grep'
-
     class Config:
         case_sensitive = True
         env_prefix = 'PMAN_'
@@ -36,6 +34,5 @@ def dump_config(output: Output | None = None) -> None:
     columns = ['Environment Variable', 'Value']
     rows = [
         ['PMAN_DOC_PATH', pman_doc_path],
-        ['PMAN_SEARCH_TOOL', SETTINGS.SEARCH_TOOL],
     ]
     output.write_table(columns=columns, rows=rows)

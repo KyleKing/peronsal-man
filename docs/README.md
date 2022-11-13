@@ -10,6 +10,8 @@ Personal Manpages
    pipx install personal-man
    ```
 
+1. [Install `ripgrep`](https://github.com/BurntSushi/ripgrep/tree/000015791742bb1280f1853adb714fdee1ba9f8e#installation)
+
 1. Run `pman` to check that installation succeeded and to see the available commands
 
 1. The help output will display the directory for your personal manpages, but you can change the default by exporting an environment variable: `PMAN_DOC_PATH`. I personally have a directory within my main Obsidian vault so that I can edit the files in [Obsidian](https://obsidian.md/) and search with `pman`
