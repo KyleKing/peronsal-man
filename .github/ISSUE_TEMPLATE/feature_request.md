@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Please share your ideas for pman!
+about: Please share your ideas for personal_man!
 title: ''
 labels: 'Type: Feature'
 assignees: kyleking

@@ -1,5 +1,11 @@
 ## Unreleased
 
+### Refactor
+
+- rename package to personal_man
+
+## 1.0.0 (2022-11-12)
+
 ### Feat
 
 - add advanced search with ripgrep (#6)

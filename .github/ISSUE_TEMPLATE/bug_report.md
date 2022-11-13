@@ -23,7 +23,7 @@ Steps and/or code snippet(s) to reproduce the behavior:
 **Additional Information**
 <!-- Add any relevant versions -->
 
-- `pman` Version:
+- `personal_man` Version:
 - OS: \[e.g. macOS/Windows\]:
 - OS Version \[e.g. Catalina/10\]:
 <!-- Add `pip freeze` or other version information that is relevant -->
