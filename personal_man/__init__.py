@@ -1,9 +1,9 @@
-"""pman."""
+"""personal_man."""
 
 from loguru import logger
 
 __version__ = '1.0.0'
-__pkg_name__ = 'pman'
+__pkg_name__ = 'personal_man'
 
 logger.disable(__pkg_name__)
 

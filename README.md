@@ -2,4 +2,4 @@
 
 Personal Manpages
 
-Documentation can be found on [Github (./docs)](./docs), [PyPi](https://pypi.org/project/pman/), or [Hosted](https://pman.kyleking.me/)!
+Documentation can be found on [Github (./docs)](./docs), [PyPi](https://pypi.org/project/personal_man/), or [Hosted](https://personal_man.kyleking.me/)!

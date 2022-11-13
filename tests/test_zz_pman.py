@@ -4,7 +4,7 @@ from pathlib import Path
 
 import tomli
 
-from pman import __version__
+from personal_man import __version__
 
 
 def test_version():

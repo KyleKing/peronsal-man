@@ -10,27 +10,27 @@ pythons = ["3.10"]
 [tool.commitizen]
 name = "cz_conventional_commits"
 version = "1.0.0"
-version_files = ["pyproject.toml", "pman/__init__.py"]
+version_files = ["pyproject.toml", "personal_man/__init__.py"]
 
 [tool.isort]
 balanced_wrapping = true
 default_section = "THIRDPARTY"
 force_grid_wrap = 0
 include_trailing_comma = true
-known_first_party = "pman"
+known_first_party = "personal_man"
 length_sort = false
 line_length = 120
 multi_line_output = 5
 
 [tool.poetry]
-name = "pman"
+name = "personal_man"
 version = "1.0.0"
-description = "pman: Personal Manpages"
+description = "Personal Manpages (pman)"
 license = "MIT"
 authors = ["Kyle King <dev.act.kyle@gmail.com>"]
 maintainers = []
-repository = "https://github.com/kyleking/pman"
-documentation = "https://github.com/kyleking/pman/docs"
+repository = "https://github.com/kyleking/personal_man"
+documentation = "https://github.com/kyleking/personal_man/docs"
 readme = "docs/README.md"
 include = ["LICENSE.md"]
 keywords = []
@@ -42,11 +42,11 @@ classifiers = [
 ] # https://pypi.org/classifiers/
 
 [tool.poetry.scripts]
-pman = "pman:run"
+pman = "personal_man:run"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/kyleking/pman/issues"
-"Changelog" = "https://github.com/kyleking/pman/blob/main/docs/docs/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/kyleking/personal_man/issues"
+"Changelog" = "https://github.com/kyleking/personal_man/blob/main/docs/docs/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.10.5"

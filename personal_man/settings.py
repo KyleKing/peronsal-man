@@ -1,4 +1,4 @@
-"""pman Settings."""
+"""personal_man Settings."""
 
 from os import environ
 from pathlib import Path

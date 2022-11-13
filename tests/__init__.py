@@ -1,1 +1,1 @@
-"""pman test files."""
+"""personal_man test files."""

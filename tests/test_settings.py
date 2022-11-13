@@ -2,8 +2,8 @@ import io
 
 from rich.console import Console
 
-from pman.output import Output
-from pman.settings import dump_config
+from personal_man.output import Output
+from personal_man.settings import dump_config
 
 
 def test_prompt_fuzzy_choice(assert_against_cache):

@@ -22,7 +22,7 @@ from calcipy.doit_tasks import *  # noqa: F401,F403,H303 (Run 'doit list' to see
 from calcipy.doit_tasks import DOIT_CONFIG_RECOMMENDED
 from calcipy.log_helpers import activate_debug_logging
 
-from pman import __pkg_name__
+from personal_man import __pkg_name__
 
 activate_debug_logging(pkg_names=[__pkg_name__])
 

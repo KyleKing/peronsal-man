@@ -1,10 +1,10 @@
 ---
-site_name: pman
+site_name: personal_man
 site_author: Kyle King
-site_description: pman project documentation
-site_url: https://pman.kyleking.me
-repo_name: kyleking/pman
-repo_url: https://github.com/kyleking/pman
+site_description: personal_man project documentation
+site_url: https://personal_man.kyleking.me
+repo_name: kyleking/personal_man
+repo_url: https://github.com/kyleking/personal_man
 edit_uri: edit/main/docs
 docs_dir: docs
 site_dir: releases/site

@@ -5,7 +5,7 @@ from pathlib import Path
 from calcipy.file_helpers import delete_dir, ensure_dir
 from calcipy.log_helpers import activate_debug_logging
 
-from pman import __pkg_name__
+from personal_man import __pkg_name__
 
 activate_debug_logging(pkg_names=[__pkg_name__], clear_log=True)
 
