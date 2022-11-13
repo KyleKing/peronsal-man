@@ -50,19 +50,19 @@ poetry run doit run lock document deploy_docs publish
 | File                                            |   Statements |   Missing |   Excluded | Coverage   |
 |-------------------------------------------------|--------------|-----------|------------|------------|
 | `personal_man/__init__.py`                      |            6 |         0 |          0 | 100.0%     |
-| `personal_man/cli.py`                           |           39 |        17 |          0 | 56.4%      |
+| `personal_man/cli.py`                           |           50 |        21 |          0 | 58.0%      |
 | `personal_man/controllers/__init__.py`          |            0 |         0 |          0 | 100.0%     |
 | `personal_man/controllers/search_controller.py` |           14 |         3 |          0 | 78.6%      |
-| `personal_man/controllers/show_controller.py`   |           18 |         6 |          0 | 66.7%      |
+| `personal_man/controllers/show_controller.py`   |           23 |         9 |          0 | 60.9%      |
 | `personal_man/core/__init__.py`                 |            0 |         0 |          0 | 100.0%     |
 | `personal_man/core/exceptions.py`               |            4 |         0 |          0 | 100.0%     |
 | `personal_man/core/version.py`                  |            8 |         8 |          0 | 0.0%       |
 | `personal_man/onboarding.py`                    |            0 |         0 |          0 | 100.0%     |
 | `personal_man/output.py`                        |           54 |        18 |          0 | 66.7%      |
 | `personal_man/search.py`                        |            6 |         1 |          0 | 83.3%      |
-| `personal_man/settings.py`                      |           21 |         0 |          0 | 100.0%     |
-| `personal_man/show.py`                          |           26 |        15 |          0 | 42.3%      |
-| **Totals**                                      |          196 |        68 |          0 | 65.3%      |
+| `personal_man/settings.py`                      |           20 |         0 |          0 | 100.0%     |
+| `personal_man/show.py`                          |           41 |        23 |          0 | 43.9%      |
+| **Totals**                                      |          226 |        83 |          0 | 63.3%      |
 
 Generated on: 2022-11-13
 <!-- {cte} -->

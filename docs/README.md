@@ -4,13 +4,13 @@ Personal Manpages
 
 ## Installation
 
-1. Install with pipx
+1. [Install `ripgrep`](https://github.com/BurntSushi/ripgrep/tree/000015791742bb1280f1853adb714fdee1ba9f8e#installation)
+
+1. Install the `pman` CLI with pipx
 
    ```sh
    pipx install personal-man
    ```
-
-1. [Install `ripgrep`](https://github.com/BurntSushi/ripgrep/tree/000015791742bb1280f1853adb714fdee1ba9f8e#installation)
 
 1. Run `pman` to check that installation succeeded and to see the available commands
 

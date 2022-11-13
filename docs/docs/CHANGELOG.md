@@ -1,7 +1,17 @@
 ## Unreleased
 
+### Feat
+
+- add edit flag to show subcommand
+- dump the environment variables when no arguments
+
+### Fix
+
+- remove unused SEARCH_TOOL
+
 ### Refactor
 
+- finish package rename
 - rename package to personal_man
 
 ## 1.0.0 (2022-11-12)

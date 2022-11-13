@@ -1,6 +1,7 @@
 """pman Command Line."""
 
 import traceback
+
 from beartype import beartype
 from cement import App, TestApp, init_defaults
 from cement.core.exc import CaughtSignal
@@ -10,8 +11,8 @@ from . import __pkg_name__
 from .controllers.search_controller import SearchController
 from .controllers.show_controller import ShowController
 from .core.exceptions import CLIError
-from .settings import dump_config
 from .output import Output
+from .settings import dump_config
 
 # Initialize nested dictionary for storing application defaults
 _CONFIG = init_defaults(__pkg_name__)
