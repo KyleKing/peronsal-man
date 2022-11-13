@@ -32,11 +32,10 @@ readme = "docs/README.md"
 include = ["LICENSE.md"]
 keywords = []
 classifiers = [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 4 - Beta",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ] # https://pypi.org/classifiers/
 
 [tool.poetry.scripts]
@@ -47,10 +46,14 @@ pman = "pman:run"
 "Changelog" = "https://github.com/kyleking/pman/blob/main/docs/docs/CHANGELOG.md"
 
 [tool.poetry.dependencies]
-python = "^3.8.4"
+python = "^3.10.5"
 calcipy = ">=0.20.0"
 pydantic = ">=1.9.1"
+questionary = ">=1.10.0"
 rich = ">=12.5.1"
 
 [tool.poetry.dev-dependencies]
 calcipy = { version = "*", extras = ["dev", "lint", "test"] }
+
+[tool.poetry.group.dev.dependencies]
+pytest-cache-assert = "^3.0.6"

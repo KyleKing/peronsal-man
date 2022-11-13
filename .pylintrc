@@ -26,7 +26,9 @@ allow-wildcard-with-all=yes
 logging-format-style=new
 
 [MESSAGES CONTROL]
-disable=line-too-long  # Defer to flake8/black
+disable=line-too-long,  # Defer to flake8/black
+        import-not-at-top-of-file, # Defer to isort
+        too-few-public-methods  # Too many false positives with pydantic.BaseModel
 
 [REFACTORING]
 max-nested-blocks=3

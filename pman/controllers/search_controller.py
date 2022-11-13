@@ -4,8 +4,10 @@ from cement import Controller, ex
 
 from ..search import search_action
 
+HELP_TEXT = 'Search personal manpage body text'
 
-class SearchController(Controller):
+
+class SearchController(Controller):  # pylint: disable=R0901
     """Search CLI Controller."""
 
     class Meta:
@@ -19,14 +21,14 @@ class SearchController(Controller):
         self.app.args.print_help()
 
     @ex(
-        help='Find Subcommand', arguments=[
+        help=HELP_TEXT, arguments=[
             (
-                ['-t', '--search-token'],
-                {'help': 'Search token', 'action': 'store', 'dest': 'search_token'},
+                ['search_token'],
+                {'help': 'Search string'},
             ),
         ],
     )
     def search(self) -> None:
         """Find manpage by searching with a regular expression or text string."""
-        pargs = self.app.pargs
-        search_action(search_token=pargs.search_token)
+        search_token = self.app.pargs.search_token
+        search_action(search_token=search_token)

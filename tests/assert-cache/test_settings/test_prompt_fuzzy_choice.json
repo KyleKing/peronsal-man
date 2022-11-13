@@ -1,0 +1,10 @@
+{
+  "_info": [
+    {
+      "func_args": {},
+      "test_file": "test_settings.py",
+      "test_name": "test_prompt_fuzzy_choice"
+    }
+  ],
+  "_json": "\n Environment Variable  Value             \n\n PMAN_DOC_PATH   /Users/kyleking/MyDocuments/Obsidian-Vaults/obsidian \n PMAN_SEARCH_TOOL   grep              \n\n"
+}
