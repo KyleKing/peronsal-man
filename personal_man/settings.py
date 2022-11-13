@@ -25,7 +25,6 @@ SETTINGS = Settings()
 """Global settings instance."""
 
 
-# FIXME: Make this part of the default help output or separate subcommand
 @beartype
 def dump_config(output: Output | None = None) -> None:
     """Dump pman configuration."""
