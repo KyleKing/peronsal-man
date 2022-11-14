@@ -10,6 +10,12 @@ queries:
   - security-and-quality
   - security-extended
 
+# FIXME: Why is this incorrect?
+# https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#excluding-specific-queries-from-analysis
 query-filters:
+  - exclude:
+      id: js/redundant-assignment
+  - exclude:
+      id: js/useless-assignment-to-local
   - exclude:
       id: py/unused-import
