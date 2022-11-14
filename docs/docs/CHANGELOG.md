@@ -8,6 +8,8 @@
 
 ### Fix
 
+- add indirect dependencies from calcipy
+- make the PMAN_DOC_PATH more optional...
 - remove unused SEARCH_TOOL
 
 ### Refactor
