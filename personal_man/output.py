@@ -115,7 +115,7 @@ class Output:
         for idx, choice in enumerate(choices):
             self.console.print(f'{idx}. {choice}')
         selection = Prompt.ask(
-            'Which manpage would you like to see?',
+            question,
             choices=[*map(str, range(len(choices)))],
             default='0',
         )

@@ -41,29 +41,35 @@
 #   Show                            Show the subsequent commands in the output
 
 Output docs/demo.gif
-Set PlaybackSpeed 0.5
-
-# Require pman < Doesn't work?
+Set PlaybackSpeed 0.25
 
 Set Theme "SpaceGray Eighties"
 Set FontFamily "Hack Nerd Font Mono"
 
 Set FontSize 15
 Set Width 1200
-Set Height 900
+Set Height 800
 
-Type "export PMAN_DOC_PATH=~/Documents/ObsidianVault/pman"  Sleep 500ms  Enter
+Type "export PMAN_DOC_PATH=$PWD/.pman"  Sleep 500ms  Enter
 
-Type "pman"  Sleep 1s  Enter  Sleep 1s
-Type "pman --help"  Sleep 1s  Enter  Sleep 2s
+Hide
+Type "./tests/setup_test_dir.sh"  Enter
+Show
 
-Type "pman show --help"  Sleep 1s  Enter  Sleep 1s
-Type "pman show"  Sleep 1s  Enter  Sleep 2s
-Type "pman show wezterm"  Sleep 1s  Enter  Sleep 5s
-Type "pman show n"  Sleep 1s  Enter  Down@100ms 4  Enter  Sleep 5s
+Enter Type "pman"  Sleep 1s  Enter  Sleep 1s
+Enter Type "pman --help"  Sleep 1s  Enter  Sleep 2s
 
-Type "pman search"  Sleep 1s  Enter  Sleep 1s
-Type "pman search --help"  Sleep 1s  Enter  Sleep 2s
-Type 'pman search "--"'   Sleep 1s  Enter  Sleep 5s
+Enter Type "pman show --help"  Sleep 1s  Enter  Sleep 1s
+Enter Type "pman show"  Sleep 1s  Enter  Sleep 2s
+Enter Type "pman show wezterm"  Sleep 1s  Enter  Sleep 5s
+Enter Type "pman show i"  Sleep 1s  Enter  Sleep 500ms  Down@500ms 2  Sleep 500ms  Enter  Sleep 5s
+
+Enter Type "pman search"  Sleep 1s  Enter  Sleep 1s
+Enter Type "pman search --help"  Sleep 1s  Enter  Sleep 2s
+Enter Type "pman search ine"   Sleep 1s  Enter  Sleep 5s  Enter
 
 Sleep 5s
+
+Hide
+Type "rm -rf $PMAN_DOC_PATH"  Enter
+Show

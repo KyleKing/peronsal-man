@@ -304,12 +304,12 @@
         "version": "0.7.1"
     },
     "diff-cover": {
-        "datetime": "2022-09-20T00:16:55.140950+00:00",
+        "datetime": "2022-11-13T20:26:19.333670+00:00",
         "domain": "https://pypi.org/pypi/{name}/json",
-        "latest_datetime": "2022-09-20T00:16:55.140950+00:00",
-        "latest_version": "7.0.1",
+        "latest_datetime": "2022-11-13T20:26:19.333670+00:00",
+        "latest_version": "7.0.2",
         "name": "diff-cover",
-        "version": "7.0.1"
+        "version": "7.0.2"
     },
     "dill": {
         "datetime": "2022-10-23T22:46:30.986990+00:00",
@@ -360,12 +360,12 @@
         "version": "2.1.0"
     },
     "exceptiongroup": {
-        "datetime": "2022-11-04T09:19:49.042914+00:00",
+        "datetime": "2022-11-13T22:18:12.640432+00:00",
         "domain": "https://pypi.org/pypi/{name}/json",
-        "latest_datetime": "2022-11-04T09:19:49.042914+00:00",
-        "latest_version": "1.0.1",
+        "latest_datetime": "2022-11-13T22:18:12.640432+00:00",
+        "latest_version": "1.0.2",
         "name": "exceptiongroup",
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     "executing": {
         "datetime": "2022-10-29T13:51:08.470842+00:00",

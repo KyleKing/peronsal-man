@@ -2,6 +2,7 @@
 
 ### Feat
 
+- add VHS demo
 - add edit flag to show subcommand
 - dump the environment variables when no arguments
 
