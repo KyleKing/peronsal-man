@@ -10,7 +10,7 @@ import mkdocs_gen_files
 
 nav = mkdocs_gen_files.Nav()
 
-for path in sorted(Path('pman').rglob('*.py')):
+for path in sorted(Path('personal_man').rglob('*.py')):
     module_path = path.with_suffix('')
     doc_path = path.with_suffix('.md')
     full_doc_path = Path('reference', doc_path)
