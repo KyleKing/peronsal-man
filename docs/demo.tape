@@ -42,6 +42,7 @@
 
 Output docs/demo.gif
 Set PlaybackSpeed 0.25
+Set TypingSpeed 10ms
 
 Set Theme "SpaceGray Eighties"
 Set FontFamily "Hack Nerd Font Mono"
