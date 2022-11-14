@@ -4,7 +4,7 @@ from os import environ
 from pathlib import Path
 
 from beartype import beartype
-from pydantic import BaseSettings, DirectoryPath, Field
+from pydantic import BaseSettings, Field
 
 from .output import Output
 
@@ -14,7 +14,7 @@ DEF_DOC_PATH = Path(environ.get('XDG_DATA_HOME', '~/.local')).expanduser() / 'pm
 class Settings(BaseSettings):
     """Configurable Settings (Environment Variables)."""
 
-    DOC_PATH: DirectoryPath = Field(default=DEF_DOC_PATH)
+    DOC_PATH: Path = Field(default=DEF_DOC_PATH)
 
     class Config:
         case_sensitive = True
