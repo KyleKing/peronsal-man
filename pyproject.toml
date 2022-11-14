@@ -50,6 +50,9 @@ pman = "personal_man:run"
 
 [tool.poetry.dependencies]
 python = "^3.10.5"
+beartype = ">=0.11.0"
+cement = ">=3.0.8"
+loguru = ">=0.6.0"
 pydantic = ">=1.9.1"
 questionary = ">=1.10.0"
 rich = ">=12.5.1"
