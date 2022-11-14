@@ -2,7 +2,7 @@
 site_name: personal_man
 site_author: Kyle King
 site_description: personal_man project documentation
-site_url: https://personal_man.kyleking.me
+site_url: https://personal-man.kyleking.me
 repo_name: kyleking/personal-man
 repo_url: https://github.com/kyleking/personal-man
 edit_uri: edit/main/docs

@@ -4,7 +4,7 @@
 
 ```sh
 git clone https://github.com/kyleking/personal-man.git
-cd personal_man
+cd personal-man
 poetry install
 
 # See the available tasks
