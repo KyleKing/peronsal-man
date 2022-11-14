@@ -32,7 +32,7 @@ test = ["coverage", "flake8", "pexpect", "wheel"]
 name = "arrow"
 version = "1.2.3"
 description = "Better dates & times for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -156,7 +156,7 @@ yaml = ["PyYAML"]
 name = "beartype"
 version = "0.11.0"
 description = "Unbearably fast runtime type checking in pure Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7.0"
 
@@ -182,7 +182,7 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 name = "bidict"
 version = "0.22.0"
 description = "The bidirectional mapping library for Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -206,7 +206,7 @@ python-versions = ">=3.7"
 name = "calcipy"
 version = "0.21.2"
 description = "Python package to simplify development. Includes functionality for task running, testing, linting, documenting, and more"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8.4,<4.0.0"
 
@@ -333,7 +333,7 @@ test = ["diff-cover (>=6.5.0)", "nox-poetry (>=1.0.0)", "pytest (>=7.1.2)", "pyt
 name = "cement"
 version = "3.0.8"
 description = "Application Framework for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -352,7 +352,7 @@ yaml = ["pyYaml"]
 name = "certifi"
 version = "2022.9.24"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -360,7 +360,7 @@ python-versions = ">=3.6"
 name = "cfgv"
 version = "3.3.1"
 description = "Validate configuration and produce human readable error messages."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.1"
 
@@ -376,7 +376,7 @@ python-versions = ">=3.6"
 name = "charset-normalizer"
 version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.0"
 
@@ -414,7 +414,7 @@ tests-cov = ["coverage (<6)", "coveralls", "pytest", "pytest-cov"]
 name = "cloudpickle"
 version = "2.2.0"
 description = "Extended pickling support for Python objects"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -430,7 +430,7 @@ python-versions = "*"
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 
@@ -514,7 +514,7 @@ python-versions = ">=3.6"
 name = "decorator"
 version = "5.1.1"
 description = "Decorators for Humans"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -542,7 +542,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "diff-cover"
-version = "7.0.1"
+version = "7.0.2"
 description = "Run coverage and linting reports on diffs"
 category = "dev"
 optional = false
@@ -572,7 +572,7 @@ graph = ["objgraph (>=1.7.2)"]
 name = "distlib"
 version = "0.3.6"
 description = "Distribution utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -606,7 +606,7 @@ tomli = ["tomli (<2.0.0)"]
 name = "doit"
 version = "0.36.0"
 description = "doit - Automation Tool"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -627,7 +627,7 @@ python-versions = "*"
 
 [[package]]
 name = "exceptiongroup"
-version = "1.0.1"
+version = "1.0.2"
 description = "Backport of PEP 654 (exception groups)"
 category = "dev"
 optional = false
@@ -674,7 +674,7 @@ tomli = ">=2.0.0,<3"
 name = "filelock"
 version = "3.8.0"
 description = "A platform independent file lock."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -1282,11 +1282,14 @@ yaml = ["PyYAML"]
 
 [[package]]
 name = "griffe"
-version = "0.23.0"
+version = "0.24.0"
 description = "Signatures for entire Python programs. Extract the structure, the frame, the skeleton of your project, to generate API documentation or find breaking changes in your API."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
+
+[package.dependencies]
+colorama = ">=0.4"
 
 [package.extras]
 async = ["aiofiles (>=0.7,<1.0)"]
@@ -1320,7 +1323,7 @@ pygments = ">=2.2.0"
 name = "identify"
 version = "2.5.8"
 description = "File identification library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -1331,7 +1334,7 @@ license = ["ukkonen"]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -1339,7 +1342,7 @@ python-versions = ">=3.5"
 name = "importlib-metadata"
 version = "5.0.0"
 description = "Read metadata from Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -1446,7 +1449,7 @@ tomli = ">=2.0.1,<3"
 name = "loguru"
 version = "0.6.0"
 description = "Python logging made (stupidly) simple"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -1686,14 +1689,14 @@ python-legacy = ["mkdocstrings-python-legacy (>=0.2.1)"]
 
 [[package]]
 name = "mkdocstrings-python"
-version = "0.7.1"
+version = "0.8.0"
 description = "A Python handler for mkdocstrings."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.dependencies]
-griffe = ">=0.11.1"
+griffe = ">=0.24"
 mkdocstrings = ">=0.19"
 
 [[package]]
@@ -1748,7 +1751,7 @@ python-versions = "*"
 name = "nodeenv"
 version = "1.7.0"
 description = "Node.js virtual environment builder"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*"
 
@@ -1790,7 +1793,7 @@ tomlkit = ">=0.7"
 name = "numpy"
 version = "1.23.4"
 description = "NumPy is the fundamental package for array computing with Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -1820,7 +1823,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "pandas"
 version = "1.5.1"
 description = "Powerful data structures for data analysis, time series, and statistics"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -1846,7 +1849,7 @@ flake8 = ">3.0.0"
 
 [[package]]
 name = "pathspec"
-version = "0.10.1"
+version = "0.10.2"
 description = "Utility library for gitignore style pattern matching of file paths."
 category = "dev"
 optional = false
@@ -1922,7 +1925,7 @@ terminaltables = "*"
 name = "platformdirs"
 version = "2.5.4"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -1946,7 +1949,7 @@ testing = ["pytest", "pytest-benchmark"]
 name = "pre-commit"
 version = "2.20.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2094,7 +2097,7 @@ diagrams = ["jinja2", "railroad-diagrams"]
 name = "pyrate-limiter"
 version = "2.8.3"
 description = "Python Rate-Limiter using Leaky-Bucket Algorithm"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -2219,7 +2222,7 @@ watchdog = ">=2.0.0"
 name = "python-box"
 version = "6.1.0"
 description = "Advanced Python dictionaries with dot notation access"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2236,7 +2239,7 @@ yaml = ["ruamel.yaml (>=0.17)"]
 name = "python-dateutil"
 version = "2.8.2"
 description = "Extensions to the standard Python datetime module"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 
@@ -2261,7 +2264,7 @@ test = ["coverage", "pycodestyle", "pyflakes", "pylint", "pytest", "pytest-cov"]
 name = "pytz"
 version = "2022.6"
 description = "World timezone definitions, modern and historical"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -2280,7 +2283,7 @@ tokenize-rt = ">=3.2.0"
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -2326,7 +2329,7 @@ mando = ">=0.6,<0.7"
 name = "requests"
 version = "2.28.1"
 description = "Python HTTP for Humans."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7, <4"
 
@@ -2424,7 +2427,7 @@ experiments = ["jsonnet (>=0.18,<1.0)"]
 name = "setuptools"
 version = "65.5.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2437,7 +2440,7 @@ testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -2504,7 +2507,7 @@ test = ["pylint", "pytest", "pytest-black", "pytest-cov", "pytest-pylint"]
 name = "sty"
 version = "1.0.4"
 description = "String styling for your terminal"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -2512,7 +2515,7 @@ python-versions = "*"
 name = "tabulate"
 version = "0.9.0"
 description = "Pretty-print tabular data"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2550,7 +2553,7 @@ python-versions = ">=3.7"
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -2558,7 +2561,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2591,7 +2594,7 @@ telegram = ["requests"]
 name = "transitions"
 version = "0.9.0"
 description = "A lightweight, object-oriented Python state machine implementation with many extensions."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -2715,7 +2718,7 @@ python-versions = "*"
 name = "urllib3"
 version = "1.26.12"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4"
 
@@ -2728,7 +2731,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "virtualenv"
 version = "20.16.7"
 description = "Virtual Python Environment builder"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -2786,7 +2789,7 @@ python-versions = "*"
 name = "win32-setctime"
 version = "1.1.0"
 description = "A small Python utility to set file creation time on Windows"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -2831,7 +2834,7 @@ setuptools = "*"
 name = "zipp"
 version = "3.10.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2842,7 +2845,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10.5"
-content-hash = "327867e832871d999d83b77d22a0c672b76e61509852fb34f8d671d8369cdc7a"
+content-hash = "50ba62706517638c87ce596c0034565b512ba576ae481834cf506d0416ff438d"
 
 [metadata.files]
 absolufy-imports = [
@@ -3045,8 +3048,8 @@ defusedxml = [
     {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
 ]
 diff-cover = [
-    {file = "diff_cover-7.0.1-py3-none-any.whl", hash = "sha256:16f2fe42885fee23400b886675d813ce72b9ef382856049fc1cd1a3f5b07357a"},
-    {file = "diff_cover-7.0.1.tar.gz", hash = "sha256:69258355daf8276057a92e42cec52594ad8cfe7dd505d6f0e56fe440bc4418d0"},
+    {file = "diff_cover-7.0.2-py3-none-any.whl", hash = "sha256:c0a08229edca5aa46da061e193d3d163ed9853ba119c6a6dd332c25f874b0ffc"},
+    {file = "diff_cover-7.0.2.tar.gz", hash = "sha256:38435447dad32abb7e01d1c3942539021a522388a3b585d583a6e207cc133497"},
 ]
 dill = [
     {file = "dill-0.3.6-py3-none-any.whl", hash = "sha256:a07ffd2351b8c678dfc4a856a3005f8067aea51d6ba6c700796a4d9e280f39f0"},
@@ -3072,8 +3075,8 @@ eradicate = [
     {file = "eradicate-2.1.0.tar.gz", hash = "sha256:aac7384ab25b1bf21c4c012de9b4bf8398945a14c98c911545b2ea50ab558014"},
 ]
 exceptiongroup = [
-    {file = "exceptiongroup-1.0.1-py3-none-any.whl", hash = "sha256:4d6c0aa6dd825810941c792f53d7b8d71da26f5e5f84f20f9508e8f2d33b140a"},
-    {file = "exceptiongroup-1.0.1.tar.gz", hash = "sha256:73866f7f842ede6cb1daa42c4af078e2035e5f7607f0e2c762cc51bb31bbe7b2"},
+    {file = "exceptiongroup-1.0.2-py3-none-any.whl", hash = "sha256:c22f11ec6a10d2b453871c5c5fe887436c4d1961324ce9090f2ca6ddc4180c27"},
+    {file = "exceptiongroup-1.0.2.tar.gz", hash = "sha256:a31cd183c3dea02e617aab5153588d5f7258a77b51f0ef41b3815ae8a0d0f695"},
 ]
 executing = [
     {file = "executing-1.2.0-py2.py3-none-any.whl", hash = "sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc"},
@@ -3294,8 +3297,8 @@ glom = [
     {file = "glom-22.1.0.tar.gz", hash = "sha256:1510c6587a8f9c64a246641b70033cbc5ebde99f02ad245693678038e821aeb5"},
 ]
 griffe = [
-    {file = "griffe-0.23.0-py3-none-any.whl", hash = "sha256:cfca5f523808109da3f8cfaa46e325fa2e5bef51120d1146e908c121b56475f0"},
-    {file = "griffe-0.23.0.tar.gz", hash = "sha256:a639e2968c8e27f56ebcc57f869a03cea7ac7e7f5684bd2429c665f761c4e7bd"},
+    {file = "griffe-0.24.0-py3-none-any.whl", hash = "sha256:6c6b64716155f27ef63377e2b04749079c359f06d9a6e638bb2f885cbe463360"},
+    {file = "griffe-0.24.0.tar.gz", hash = "sha256:afa92aeb8c5a4f2501693ffd607f820d7ade3ac2a36e34c43d39ee3486cec392"},
 ]
 httplib2 = [
     {file = "httplib2-0.21.0-py3-none-any.whl", hash = "sha256:987c8bb3eb82d3fa60c68699510a692aa2ad9c4bd4f123e51dfb1488c14cdd01"},
@@ -3573,8 +3576,8 @@ mkdocstrings = [
     {file = "mkdocstrings-0.19.0.tar.gz", hash = "sha256:efa34a67bad11229d532d89f6836a8a215937548623b64f3698a1df62e01cc3e"},
 ]
 mkdocstrings-python = [
-    {file = "mkdocstrings-python-0.7.1.tar.gz", hash = "sha256:c334b382dca202dfa37071c182418a6df5818356a95d54362a2b24822ca3af71"},
-    {file = "mkdocstrings_python-0.7.1-py3-none-any.whl", hash = "sha256:a22060bfa374697678e9af4e62b020d990dad2711c98f7a9fac5c0345bef93c7"},
+    {file = "mkdocstrings-python-0.8.0.tar.gz", hash = "sha256:67f674a8b252fca0b9411c10fb923dd6aacc49ac55c59f738b78b06592ace43d"},
+    {file = "mkdocstrings_python-0.8.0-py3-none-any.whl", hash = "sha256:cbee42e53aeaae340d79d72e9bcf42f2b6abe4d11696597c76e3e86a4d9f05a0"},
 ]
 more-itertools = [
     {file = "more-itertools-8.14.0.tar.gz", hash = "sha256:c09443cd3d5438b8dafccd867a6bc1cb0894389e90cb53d227456b0b0bccb750"},
@@ -3704,8 +3707,8 @@ pandas-vet = [
     {file = "pandas_vet-0.2.3-py3-none-any.whl", hash = "sha256:349e4240399ead316f64f9afc8e94a5bd5cfff45d7f448c5c22989e86c4ac782"},
 ]
 pathspec = [
-    {file = "pathspec-0.10.1-py3-none-any.whl", hash = "sha256:46846318467efc4556ccfd27816e004270a9eeeeb4d062ce5e6fc7a87c573f93"},
-    {file = "pathspec-0.10.1.tar.gz", hash = "sha256:7ace6161b621d31e7902eb6b5ae148d12cfd23f4a249b9ffb6b9fee12084323d"},
+    {file = "pathspec-0.10.2-py3-none-any.whl", hash = "sha256:88c2606f2c1e818b978540f73ecc908e13999c6c3a383daf3705652ae79807a5"},
+    {file = "pathspec-0.10.2.tar.gz", hash = "sha256:8f6bf73e5758fd365ef5d58ce09ac7c27d2833a8d7da51712eac6e27e35141b0"},
 ]
 pbr = [
     {file = "pbr-5.11.0-py2.py3-none-any.whl", hash = "sha256:db2317ff07c84c4c63648c9064a79fe9d9f5c7ce85a9099d4b6258b3db83225a"},
