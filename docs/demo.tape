@@ -41,7 +41,7 @@
 #   Show                            Show the subsequent commands in the output
 
 Output docs/demo.gif
-Set PlaybackSpeed 0.25
+Set PlaybackSpeed 0.3
 Set TypingSpeed 10ms
 
 Set Theme "SpaceGray Eighties"
@@ -51,23 +51,22 @@ Set FontSize 15
 Set Width 1200
 Set Height 800
 
-Type "export PMAN_DOC_PATH=$PWD/.pman"  Sleep 500ms  Enter
+Type "export PMAN_DOC_PATH=$PWD/.pman"  Enter
 
 Hide
-Type "./tests/setup_test_dir.sh"  Enter
+Type "./tests/setup_test_dir.sh"  Enter  Sleep 500ms
 Show
 
-Enter Type "pman"  Sleep 1s  Enter  Sleep 1s
-Enter Type "pman --help"  Sleep 1s  Enter  Sleep 2s
+Enter Type "pman"  Sleep 500ms  Enter  Sleep 2s
+Enter Type "pman --help"  Sleep 500ms  Enter  Sleep 2s
 
-Enter Type "pman show --help"  Sleep 1s  Enter  Sleep 1s
-Enter Type "pman show"  Sleep 1s  Enter  Sleep 2s
-Enter Type "pman show wezterm"  Sleep 1s  Enter  Sleep 5s
-Enter Type "pman show i"  Sleep 1s  Enter  Sleep 500ms  Down@500ms 2  Sleep 500ms  Enter  Sleep 5s
+Enter Type "pman show --help"  Sleep 500ms  Enter  Sleep 2s
+Enter Type "pman show"  Sleep 500ms  Enter  Sleep 2s
+Enter Type "pman show wezterm"  Sleep 500ms  Enter  Sleep 5s
+Enter Type "pman show i"  Sleep 500ms  Enter  Sleep 500ms  Down@500ms 2  Sleep 2s  Enter  Sleep 5s
 
-Enter Type "pman search"  Sleep 1s  Enter  Sleep 1s
-Enter Type "pman search --help"  Sleep 1s  Enter  Sleep 2s
-Enter Type "pman search ine"   Sleep 1s  Enter  Sleep 5s  Enter
+Enter Type "pman search --help"  Sleep 500ms  Enter  Sleep 2s
+Enter Type 'pman search "ine"'   Sleep 500ms  Enter  Sleep 5s
 
 Sleep 5s
 
