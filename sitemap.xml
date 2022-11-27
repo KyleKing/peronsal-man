@@ -2,97 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://personal-man.kyleking.me/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/docs/CHANGELOG/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/docs/CODE_TAG_SUMMARY/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/docs/DEVELOPER_GUIDE/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/docs/STYLE_GUIDE/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://personal-man.kyleking.me/docs/_docs/</loc>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/modules/personal_man/_code_diagrams/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>None</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/cli/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/output/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/search/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/settings/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/show/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/controllers/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/controllers/search_controller/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/controllers/show_controller/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/core/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/core/exceptions/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://personal-man.kyleking.me/reference/personal_man/core/version/</loc>
-         <lastmod>2022-11-20</lastmod>
+         <lastmod>2022-11-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
