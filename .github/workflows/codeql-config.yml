@@ -5,12 +5,7 @@ name: Python CodeQL Configuration
 # By default, queries listed here will override any specified in a config file.
 # Prefix the list here with "+" to use these queries and those in the config file.
 
-# Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
-packs:
-  - security-and-quality
-  - security-extended
-
-# FIXME: Why is this incorrect?
+# Exclude errors already caught by pylint/flake8
 # https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#excluding-specific-queries-from-analysis
 query-filters:
   - exclude:
