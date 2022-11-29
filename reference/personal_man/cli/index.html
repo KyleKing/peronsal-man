@@ -937,7 +937,7 @@
 
         <details class="quote">
           <summary>Source code in <code>personal_man/cli.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="29 "></span><span class="k">class</span> <span class="nc">CLIApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>
+          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="29 "></span><span class="k">class</span> <span class="nc">CLIApp</span><span class="p">(</span><span class="n">App</span><span class="p">):</span>  <span class="c1"># type: ignore[misc]</span>
 <span class="linenos" data-linenos="30 "></span>    <span class="sd">&quot;&quot;&quot;My CLI Application.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="31 "></span>
 <span class="linenos" data-linenos="32 "></span>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
@@ -1148,7 +1148,7 @@
 
         <details class="quote">
           <summary>Source code in <code>personal_man/cli.py</code></summary>
-          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="50 "></span><span class="k">class</span> <span class="nc">CLIAppTest</span><span class="p">(</span><span class="n">TestApp</span><span class="p">,</span> <span class="n">CLIApp</span><span class="p">):</span>  <span class="c1"># pylint: disable=R0901</span>
+          <div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="50 "></span><span class="k">class</span> <span class="nc">CLIAppTest</span><span class="p">(</span><span class="n">TestApp</span><span class="p">,</span> <span class="n">CLIApp</span><span class="p">):</span>  <span class="c1"># type: ignore[misc]  # pylint: disable=R0901</span>
 <span class="linenos" data-linenos="51 "></span>    <span class="sd">&quot;&quot;&quot;A sub-class of CLIApp that is better suited for testing.&quot;&quot;&quot;</span>
 <span class="linenos" data-linenos="52 "></span>
 <span class="linenos" data-linenos="53 "></span>    <span class="k">class</span> <span class="nc">Meta</span><span class="p">:</span>
@@ -1239,11 +1239,11 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 29, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 29, 2022</span>
       
     
   </small>
