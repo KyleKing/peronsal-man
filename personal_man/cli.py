@@ -26,7 +26,7 @@ def on_post_setup(app: App) -> None:
         output.write('See full help with "pman --help"')
 
 
-class CLIApp(App):
+class CLIApp(App):  # type: ignore[misc]
     """My CLI Application."""
 
     class Meta:
@@ -47,7 +47,7 @@ class CLIApp(App):
         """Register hooks."""
 
 
-class CLIAppTest(TestApp, CLIApp):  # pylint: disable=R0901
+class CLIAppTest(TestApp, CLIApp):  # type: ignore[misc]  # pylint: disable=R0901
     """A sub-class of CLIApp that is better suited for testing."""
 
     class Meta:

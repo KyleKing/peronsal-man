@@ -22,7 +22,7 @@ class CustomHeading(Heading):
 
 class CustomMarkdown(Markdown):
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):  # type: ignore[no-untyped-def]
         self.elements['heading'] = CustomHeading
         super().__init__(*args, **kwargs)
 
@@ -63,7 +63,7 @@ class Output:
         # # ^ But, can't use run_cmd because it pipes STDOUT...
 
         with path_md.open() as man_file:
-            markdown = CustomMarkdown(man_file.read())
+            markdown = CustomMarkdown(man_file.read())  # type: ignore[no-untyped-call]
         self.console.print(markdown)
 
     @beartype
@@ -106,7 +106,7 @@ class Output:
     def ask(self, question: str, choices: list[str]) -> str:
         """Ask user for selection from choices."""
         if selection := questionary.select(question, choices=choices).ask():
-            return selection
+            return str(selection)
         raise RuntimeError(f'No option selected for: "{question}"')
 
     @beartype

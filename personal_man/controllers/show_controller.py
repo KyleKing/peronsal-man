@@ -11,20 +11,17 @@ from ..show import show_action
 HELP_TEXT = 'Show the personal manpage matching the provided argument or select from nearest matches'  # noqa: Q440
 
 
-class ShowController(Controller):  # pylint: disable=R0901
+class ShowController(Controller):  # type: ignore[misc]  # pylint: disable=R0901
     """`show` CLI Controller."""
 
     class Meta:
         label = 'show'
 
-        arguments = []
-        """Controller level arguments. ex: 'pman --version'."""
-
     def _default(self) -> None:
         """Default action if no sub-command is passed."""
         self.app.args.print_help()
 
-    @ex(
+    @ex(  # type: ignore[misc]
         help=HELP_TEXT, arguments=[
             (
                 ['man_name'],

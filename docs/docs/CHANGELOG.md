@@ -1,5 +1,11 @@
 ## Unreleased
 
+### Refactor
+
+- update with copier
+
+## 1.1.0 (2022-11-13)
+
 ### Feat
 
 - add VHS demo

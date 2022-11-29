@@ -10,20 +10,17 @@ from ..search import search_action
 HELP_TEXT = 'Search personal manpage body text'
 
 
-class SearchController(Controller):  # pylint: disable=R0901
+class SearchController(Controller):  # type: ignore[misc]  # pylint: disable=R0901
     """Search CLI Controller."""
 
     class Meta:
         label = 'search'
 
-        arguments = []
-        """Controller level arguments. ex: 'pman --version'."""
-
     def _default(self) -> None:
         """Default action if no sub-command is passed."""
         self.app.args.print_help()
 
-    @ex(
+    @ex(  # type: ignore[misc]
         help=HELP_TEXT, arguments=[
             (
                 ['search_token'],

@@ -52,8 +52,8 @@ poetry run doit run lock document deploy_docs publish
 | `personal_man/__init__.py`                      |            6 |         0 |          0 | 100.0%     |
 | `personal_man/cli.py`                           |           50 |        21 |          0 | 58.0%      |
 | `personal_man/controllers/__init__.py`          |            0 |         0 |          0 | 100.0%     |
-| `personal_man/controllers/search_controller.py` |           23 |        10 |          0 | 56.5%      |
-| `personal_man/controllers/show_controller.py`   |           23 |         9 |          0 | 60.9%      |
+| `personal_man/controllers/search_controller.py` |           21 |        10 |          0 | 52.4%      |
+| `personal_man/controllers/show_controller.py`   |           21 |         9 |          0 | 57.1%      |
 | `personal_man/core/__init__.py`                 |            0 |         0 |          0 | 100.0%     |
 | `personal_man/core/exceptions.py`               |            4 |         0 |          0 | 100.0%     |
 | `personal_man/core/version.py`                  |            8 |         8 |          0 | 0.0%       |
@@ -61,7 +61,7 @@ poetry run doit run lock document deploy_docs publish
 | `personal_man/search.py`                        |            6 |         1 |          0 | 83.3%      |
 | `personal_man/settings.py`                      |           20 |         0 |          0 | 100.0%     |
 | `personal_man/show.py`                          |           42 |        24 |          0 | 42.9%      |
-| **Totals**                                      |          236 |        91 |          0 | 61.4%      |
+| **Totals**                                      |          232 |        91 |          0 | 60.8%      |
 
-Generated on: 2022-11-13
+Generated on: 2022-11-27
 <!-- {cte} -->
