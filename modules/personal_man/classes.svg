@@ -96,9 +96,9 @@
 <polyline fill="none" stroke="black" points="901.5,-68.5 986.5,-68.5 "/>
 <text text-anchor="middle" x="944" y="-53.3" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- personal_man.controllers.show_controller.ShowController.Meta -->
+<!-- personal_man.controllers.search_controller.SearchController.Meta -->
 <g id="node9" class="node">
-<title>personal_man.controllers.show_controller.ShowController.Meta</title>
+<title>personal_man.controllers.search_controller.SearchController.Meta</title>
 <polygon fill="none" stroke="black" points="1004.5,-45.5 1004.5,-114.5 1089.5,-114.5 1089.5,-45.5 1004.5,-45.5"/>
 <text text-anchor="middle" x="1047" y="-99.3" font-family="Times,serif" font-size="14.00">Meta</text>
 <polyline fill="none" stroke="black" points="1004.5,-91.5 1089.5,-91.5 "/>
@@ -106,9 +106,9 @@
 <polyline fill="none" stroke="black" points="1004.5,-68.5 1089.5,-68.5 "/>
 <text text-anchor="middle" x="1047" y="-53.3" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- personal_man.controllers.search_controller.SearchController.Meta -->
+<!-- personal_man.controllers.show_controller.ShowController.Meta -->
 <g id="node10" class="node">
-<title>personal_man.controllers.search_controller.SearchController.Meta</title>
+<title>personal_man.controllers.show_controller.ShowController.Meta</title>
 <polygon fill="none" stroke="black" points="1107.5,-45.5 1107.5,-114.5 1192.5,-114.5 1192.5,-45.5 1107.5,-45.5"/>
 <text text-anchor="middle" x="1150" y="-99.3" font-family="Times,serif" font-size="14.00">Meta</text>
 <polyline fill="none" stroke="black" points="1107.5,-91.5 1192.5,-91.5 "/>
