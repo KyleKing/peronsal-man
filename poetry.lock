@@ -378,7 +378,7 @@ unicode-backport = ["unicodedata2"]
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -2821,7 +2821,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10.5"
-content-hash = "b70d07c51e000bd50fb1ef4d817d184d7bad037b1a79ed662cc54b7038fec28d"
+content-hash = "3742d851aa5770046a6dd29d69d4a1ddc4637d2a7c85c840b5063b5bf5eec553"
 
 [metadata.files]
 absolufy-imports = [

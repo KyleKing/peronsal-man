@@ -1,5 +1,9 @@
 # personal-man (`pman`)
 
+> **Note**
+>
+> I am archiving this project in favor of [cheat](https://github.com/cheat/cheat), which provides the same features and more!
+
 Personal Manpages
 
 ## Installation

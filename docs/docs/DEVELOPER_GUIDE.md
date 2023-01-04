@@ -63,5 +63,5 @@ poetry run doit run lock document deploy_docs publish
 | `personal_man/show.py`                          |           42 |        24 |          0 | 42.9%      |
 | **Totals**                                      |          232 |        91 |          0 | 60.8%      |
 
-Generated on: 2022-11-27
+Generated on: 2022-11-28
 <!-- {cte} -->
